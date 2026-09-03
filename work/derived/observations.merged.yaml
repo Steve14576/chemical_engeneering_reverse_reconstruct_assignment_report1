@@ -1,0 +1,1302 @@
+meta:
+  level: L2
+  inputs:
+  - work/derived/person1_redraw.normalized.yaml
+  - work/derived/person2.normalized.yaml
+  merge_script: work/derived/merge_observations.py
+  policy: tag 精确对齐；重号/缺号/未标注源内限定；缺席≠冲突；假设只登记不裁决
+  excluded:
+  - person1.normalized.yaml (photo 断言版, 已被 redraw 取代, 仅作对照)
+entities:
+- id: V-302
+  alias_tags:
+  - V-302
+  shape_class: vessel
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 780.0
+      y: 1390.0
+      width: 70.0
+      height: 150.0
+  tag_status: ok
+- id: T-301
+  alias_tags:
+  - T-301
+  shape_class: column
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 930.0
+      y: 1350.0
+      width: 50.0
+      height: 120.0
+  tag_status: ok
+- id: E-301
+  alias_tags:
+  - E-301
+  shape_class: exchanger
+  name_zh: 中间换热器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1110.0
+      y: 1330.0
+      width: 50.0
+      height: 120.0
+    p2:
+      x: 100.0
+      y: 1060.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: E-302
+  alias_tags:
+  - E-302
+  shape_class: exchanger
+  name_zh: 解吸塔冷凝器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1020.0
+      y: 1220.0
+      width: 120.0
+      height: 60.0
+    p2:
+      x: 100.0
+      y: 620.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: T-302
+  alias_tags:
+  - T-302
+  shape_class: column
+  name_zh: 解吸塔
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1240.0
+      y: 1310.0
+      width: 70.0
+      height: 130.0
+    p2:
+      x: 240.0
+      y: 610.0
+      width: 120.0
+      height: 550.0
+  tag_status: ok
+- id: E-303
+  alias_tags:
+  - E-303
+  shape_class: exchanger
+  name_zh: 解吸塔釜再沸器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1340.0
+      y: 1350.0
+      width: 60.0
+      height: 30.0
+    p2:
+      x: 490.0
+      y: 1080.0
+      width: 260.0
+      height: 40.0
+  tag_status: ok
+- id: p1r::kW8mp5fpktJNJ6bN1REy-14
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 1510.0
+      y: 1360.0
+      width: 60.0
+      height: 60.0
+  tag_status: missing
+- id: p1r::kW8mp5fpktJNJ6bN1REy-15
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 1520.0
+      y: 1480.0
+      width: 30.0
+      height: 60.0
+  tag_status: unlabeled
+- id: p1r::kW8mp5fpktJNJ6bN1REy-16
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 1520.0
+      y: 1570.0
+      width: 30.0
+      height: 60.0
+  tag_status: unlabeled
+- id: p1r::kW8mp5fpktJNJ6bN1REy-22
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 1590.0
+      y: 1490.0
+      width: 30.0
+      height: 60.0
+  tag_status: unlabeled
+- id: p1r::kW8mp5fpktJNJ6bN1REy-24
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p1r
+  geom:
+    p1r:
+      x: 1590.0
+      y: 1590.0
+      width: 30.0
+      height: 60.0
+  tag_status: unlabeled
+- id: E-3501
+  alias_tags:
+  - E-3501
+  shape_class: exchanger
+  name_zh: 反应进料加热釜
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1720.0
+      y: 1330.0
+      width: 50.0
+      height: 110.0
+    p2:
+      x: 1600.0
+      y: 670.0
+      width: 70.0
+      height: 220.0
+  tag_status: ok
+- id: R-3501A
+  alias_tags:
+  - R-3501A
+  shape_class: reactor
+  name_zh: 一段醚化反应器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1820.0
+      y: 1335.0
+      width: 50.0
+      height: 110.0
+    p2:
+      x: 1815.0
+      y: 650.0
+      width: 80.0
+      height: 580.0
+  tag_status: ok
+- id: R-3501B
+  alias_tags:
+  - R-3501B
+  shape_class: reactor
+  name_zh: 二段醚化反应器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1820.0
+      y: 1510.0
+      width: 50.0
+      height: 90.0
+    p2:
+      x: 1700.0
+      y: 660.0
+      width: 80.0
+      height: 560.0
+  tag_status: ok
+- id: E-3505
+  alias_tags:
+  - E-3505
+  shape_class: exchanger
+  name_zh: 催化蒸馏塔进料MTBE产品换热器
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1930.0
+      y: 1360.0
+      width: 120.0
+      height: 60.0
+    p2:
+      x: 1930.0
+      y: 1160.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: V-301
+  alias_tags:
+  - V-301
+  shape_class: vessel
+  name_zh: 解吸塔回流罐
+  sources:
+  - p1r
+  - p2
+  geom:
+    p1r:
+      x: 1330.0
+      y: 1200.0
+      width: 120.0
+      height: 60.0
+    p2:
+      x: 490.0
+      y: 860.0
+      width: 120.0
+      height: 150.0
+  tag_status: ok
+- id: FV301
+  alias_tags:
+  - FV301
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 370.0
+      y: 960.0
+      width: 80.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-5
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 490.0
+      y: 620.0
+      width: 120.0
+      height: 150.0
+  tag_status: missing
+- id: V-3506
+  alias_tags:
+  - V-3506
+  shape_class: vessel
+  name_zh: C4原料罐
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 800.0
+      y: 830.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: V-3501
+  alias_tags:
+  - V-3501
+  shape_class: vessel
+  name_zh: 甲醇原料罐
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 800.0
+      y: 910.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: P-3511
+  alias_tags:
+  - P-3511
+  shape_class: pump
+  name_zh: C4原料泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 800.0
+      y: 1060.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: P-3501
+  alias_tags:
+  - P-3501
+  shape_class: pump
+  name_zh: 甲醇进料泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 960.0
+      y: 1060.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: P-3503
+  alias_tags:
+  - P-3503
+  shape_class: pump
+  name_zh: 反应塔底循环泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1150.0
+      y: 980.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: P-3502
+  alias_tags:
+  - P-3502
+  shape_class: pump
+  name_zh: 反应塔底循环泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1150.0
+      y: 1080.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: E-3503
+  alias_tags:
+  - E-3503
+  shape_class: exchanger
+  name_zh: 二段冷凝器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1500.0
+      y: 1070.0
+      width: 70.0
+      height: 120.0
+  tag_status: ok
+- id: E-3502
+  alias_tags:
+  - E-3502
+  shape_class: exchanger
+  name_zh: 一段反应器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1590.0
+      y: 1070.0
+      width: 70.0
+      height: 120.0
+  tag_status: ok
+- id: V-3502
+  alias_tags:
+  - V-3502
+  shape_class: vessel
+  name_zh: 醚后C4罐
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1930.0
+      y: 690.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: E-3508
+  alias_tags:
+  - E-3508
+  shape_class: exchanger
+  name_zh: MTBE产品冷却器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1930.0
+      y: 1080.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-28
+  alias_tags:
+  - P-3505
+  shape_class: pump
+  name_zh: 催化塔下塔进料器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1930.0
+      y: 500.0
+      width: 120.0
+      height: 120.0
+  tag_status: duplicate
+- id: p2::5D5qHUWBTGfa0SRdJl68-29
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1960.0
+      y: 320.0
+      width: 120.0
+      height: 60.0
+  tag_status: unknown_marker
+- id: T-3501B
+  alias_tags:
+  - T-3501B
+  shape_class: column
+  name_zh: 催化蒸馏塔下塔
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2120.0
+      y: 710.0
+      width: 60.0
+      height: 370.0
+  tag_status: ok
+- id: E-3506
+  alias_tags:
+  - E-3506
+  shape_class: exchanger
+  name_zh: 催化蒸馏塔重沸器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2080.0
+      y: 1110.0
+      width: 100.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-35
+  alias_tags:
+  - T-3501A
+  shape_class: column
+  name_zh: 催化蒸馏塔上塔
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2221.0
+      y: 700.0
+      width: 60.0
+      height: 470.0
+  tag_status: duplicate
+- id: E-3509
+  alias_tags:
+  - E-3509
+  shape_class: exchanger
+  name_zh: 萃取塔进料冷却器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2326.0
+      y: 1200.0
+      width: 150.0
+      height: 60.0
+  tag_status: ok
+- id: T-3512
+  alias_tags:
+  - T-3512
+  shape_class: column
+  name_zh: MTBE出料泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2341.0
+      y: 1380.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-38
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2440.0
+      y: 1290.0
+      width: 120.0
+      height: 60.0
+  tag_status: unknown_marker
+- id: p2::5D5qHUWBTGfa0SRdJl68-39
+  alias_tags:
+  - P-3505
+  shape_class: pump
+  name_zh: 催化塔上塔进料泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2350.0
+      y: 360.0
+      width: 120.0
+      height: 60.0
+  tag_status: duplicate
+- id: E-3507
+  alias_tags:
+  - E-3507
+  shape_class: exchanger
+  name_zh: 催化蒸馏塔冷却器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2350.0
+      y: 470.0
+      width: 360.0
+      height: 40.0
+  tag_status: ok
+- id: T-3502
+  alias_tags:
+  - T-3502
+  shape_class: column
+  name_zh: 甲醇萃取塔
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2510.0
+      y: 660.0
+      width: 70.0
+      height: 490.0
+  tag_status: ok
+- id: E-3510
+  alias_tags:
+  - E-3510
+  shape_class: exchanger
+  name_zh: 萃取水冷凝器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2610.0
+      y: 810.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: T-3509
+  alias_tags:
+  - T-3509
+  shape_class: column
+  name_zh: 精馏塔采出泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2620.0
+      y: 1080.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: V-3503
+  alias_tags:
+  - V-3503
+  shape_class: vessel
+  name_zh: 催化蒸馏回流塔
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2790.0
+      y: 960.0
+      width: 70.0
+      height: 60.0
+  tag_status: ok
+- id: V-3504
+  alias_tags:
+  - V-3504
+  shape_class: vessel
+  name_zh: C4残液罐
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2830.0
+      y: 680.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: T-3508
+  alias_tags:
+  - T-3508
+  shape_class: column
+  name_zh: C4出料罐泵
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2730.0
+      y: 1340.0
+      width: 120.0
+      height: 120.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-49
+  alias_tags:
+  - T-3501A
+  shape_class: column
+  name_zh: 甲醇回收塔 主要介质：C4，甲醇，萃取水
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2980.0
+      y: 950.0
+      width: 90.0
+      height: 230.0
+  tag_status: duplicate
+- id: E-3513
+  alias_tags:
+  - E-3513
+  shape_class: exchanger
+  name_zh: 甲醇回收塔重沸器 管程：蒸汽，壳程：萃取水
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 3050.0
+      y: 1230.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-51
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 3050.0
+      y: 1340.0
+      width: 120.0
+      height: 60.0
+  tag_status: unknown_marker
+- id: E-3512
+  alias_tags:
+  - E-3512
+  shape_class: exchanger
+  name_zh: 甲醇回收塔冷凝器
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 3080.0
+      y: 740.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-53
+  alias_tags: []
+  shape_class: unknown
+  name_zh: 主要介质：甲醇，C4
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 3230.0
+      y: 740.0
+      width: 120.0
+      height: 60.0
+  tag_status: missing
+- id: V-402
+  alias_tags:
+  - V-402
+  shape_class: vessel
+  name_zh: 混合罐
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 3350.0
+      y: 950.0
+      width: 120.0
+      height: 60.0
+  tag_status: ok
+- id: p2::5D5qHUWBTGfa0SRdJl68-85
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 2730.0
+      y: 1500.0
+      width: 120.0
+      height: 60.0
+  tag_status: unknown_marker
+- id: p2::5D5qHUWBTGfa0SRdJl68-96
+  alias_tags: []
+  shape_class: unknown
+  name_zh: null
+  sources:
+  - p2
+  geom:
+    p2:
+      x: 1760.0
+      y: 1310.0
+      width: 120.0
+      height: 60.0
+  tag_status: unknown_marker
+edges:
+- id: E::T-301::V-302
+  a: T-301
+  b: V-302
+  claims:
+  - source: p1r
+    from: V-302
+    to: T-301
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-301::T-301
+  a: E-301
+  b: T-301
+  claims:
+  - source: p1r
+    from: T-301
+    to: E-301
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-301::V-301
+  a: E-301
+  b: V-301
+  claims:
+  - source: p1r
+    from: E-301
+    to: V-301
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-302::T-302
+  a: E-302
+  b: T-302
+  claims:
+  - source: p1r
+    from: E-302
+    to: T-302
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-303::T-302
+  a: E-303
+  b: T-302
+  claims:
+  - source: p1r
+    from: T-302
+    to: E-303
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-301::T-302
+  a: E-301
+  b: T-302
+  claims:
+  - source: p1r
+    from: E-301
+    to: T-302
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-15
+  a: p1r::kW8mp5fpktJNJ6bN1REy-14
+  b: p1r::kW8mp5fpktJNJ6bN1REy-15
+  claims:
+  - source: p1r
+    from: p1r::kW8mp5fpktJNJ6bN1REy-14
+    to: p1r::kW8mp5fpktJNJ6bN1REy-15
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-22
+  a: p1r::kW8mp5fpktJNJ6bN1REy-14
+  b: p1r::kW8mp5fpktJNJ6bN1REy-22
+  claims:
+  - source: p1r
+    from: p1r::kW8mp5fpktJNJ6bN1REy-14
+    to: p1r::kW8mp5fpktJNJ6bN1REy-22
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::p1r::kW8mp5fpktJNJ6bN1REy-15::p1r::kW8mp5fpktJNJ6bN1REy-16
+  a: p1r::kW8mp5fpktJNJ6bN1REy-15
+  b: p1r::kW8mp5fpktJNJ6bN1REy-16
+  claims:
+  - source: p1r
+    from: p1r::kW8mp5fpktJNJ6bN1REy-15
+    to: p1r::kW8mp5fpktJNJ6bN1REy-16
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::p1r::kW8mp5fpktJNJ6bN1REy-22::p1r::kW8mp5fpktJNJ6bN1REy-24
+  a: p1r::kW8mp5fpktJNJ6bN1REy-22
+  b: p1r::kW8mp5fpktJNJ6bN1REy-24
+  claims:
+  - source: p1r
+    from: p1r::kW8mp5fpktJNJ6bN1REy-22
+    to: p1r::kW8mp5fpktJNJ6bN1REy-24
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::E-3501::R-3501A
+  a: E-3501
+  b: R-3501A
+  claims:
+  - source: p1r
+    from: E-3501
+    to: R-3501A
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::R-3501A::R-3501B
+  a: R-3501A
+  b: R-3501B
+  claims:
+  - source: p1r
+    from: R-3501A
+    to: R-3501B
+    directed: false
+    media_label: null
+  support: single
+  undirected_any: true
+- id: E::R-3501B::p2::5D5qHUWBTGfa0SRdJl68-96
+  a: R-3501B
+  b: p2::5D5qHUWBTGfa0SRdJl68-96
+  claims:
+  - source: p2
+    from: R-3501B
+    to: p2::5D5qHUWBTGfa0SRdJl68-96
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::R-3501A::p2::5D5qHUWBTGfa0SRdJl68-96
+  a: R-3501A
+  b: p2::5D5qHUWBTGfa0SRdJl68-96
+  claims:
+  - source: p2
+    from: R-3501A
+    to: p2::5D5qHUWBTGfa0SRdJl68-96
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::V-3502::p2::5D5qHUWBTGfa0SRdJl68-28
+  a: V-3502
+  b: p2::5D5qHUWBTGfa0SRdJl68-28
+  claims:
+  - source: p2
+    from: V-3502
+    to: p2::5D5qHUWBTGfa0SRdJl68-28
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3501B::p2::5D5qHUWBTGfa0SRdJl68-28
+  a: T-3501B
+  b: p2::5D5qHUWBTGfa0SRdJl68-28
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-28
+    to: T-3501B
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::p2::5D5qHUWBTGfa0SRdJl68-28::p2::5D5qHUWBTGfa0SRdJl68-29
+  a: p2::5D5qHUWBTGfa0SRdJl68-28
+  b: p2::5D5qHUWBTGfa0SRdJl68-29
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-29
+    to: p2::5D5qHUWBTGfa0SRdJl68-28
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3501B::p2::5D5qHUWBTGfa0SRdJl68-35
+  a: T-3501B
+  b: p2::5D5qHUWBTGfa0SRdJl68-35
+  claims:
+  - source: p2
+    from: T-3501B
+    to: p2::5D5qHUWBTGfa0SRdJl68-35
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3512::p2::5D5qHUWBTGfa0SRdJl68-35
+  a: T-3512
+  b: p2::5D5qHUWBTGfa0SRdJl68-35
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-35
+    to: T-3512
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3507::p2::5D5qHUWBTGfa0SRdJl68-35
+  a: E-3507
+  b: p2::5D5qHUWBTGfa0SRdJl68-35
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-35
+    to: E-3507
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3509::T-3502
+  a: E-3509
+  b: T-3502
+  claims:
+  - source: p2
+    from: E-3509
+    to: T-3502
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3512::p2::5D5qHUWBTGfa0SRdJl68-38
+  a: T-3512
+  b: p2::5D5qHUWBTGfa0SRdJl68-38
+  claims:
+  - source: p2
+    from: T-3512
+    to: p2::5D5qHUWBTGfa0SRdJl68-38
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3509::p2::5D5qHUWBTGfa0SRdJl68-39
+  a: E-3509
+  b: p2::5D5qHUWBTGfa0SRdJl68-39
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-39
+    to: E-3509
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::p2::5D5qHUWBTGfa0SRdJl68-35::p2::5D5qHUWBTGfa0SRdJl68-39
+  a: p2::5D5qHUWBTGfa0SRdJl68-35
+  b: p2::5D5qHUWBTGfa0SRdJl68-39
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-39
+    to: p2::5D5qHUWBTGfa0SRdJl68-35
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3502::T-3509
+  a: T-3502
+  b: T-3509
+  claims:
+  - source: p2
+    from: T-3502
+    to: T-3509
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3502::V-3504
+  a: T-3502
+  b: V-3504
+  claims:
+  - source: p2
+    from: T-3502
+    to: V-3504
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3509::V-3503
+  a: T-3509
+  b: V-3503
+  claims:
+  - source: p2
+    from: T-3509
+    to: V-3503
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3510::V-3503
+  a: E-3510
+  b: V-3503
+  claims:
+  - source: p2
+    from: V-3503
+    to: E-3510
+    directed: true
+    media_label: 甲醇水溶液
+  support: single
+  undirected_any: false
+- id: E::E-3507::V-3503
+  a: E-3507
+  b: V-3503
+  claims:
+  - source: p2
+    from: V-3503
+    to: E-3507
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3508::V-3504
+  a: T-3508
+  b: V-3504
+  claims:
+  - source: p2
+    from: V-3504
+    to: T-3508
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3508::p2::5D5qHUWBTGfa0SRdJl68-85
+  a: T-3508
+  b: p2::5D5qHUWBTGfa0SRdJl68-85
+  claims:
+  - source: p2
+    from: T-3508
+    to: p2::5D5qHUWBTGfa0SRdJl68-85
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3513::p2::5D5qHUWBTGfa0SRdJl68-49
+  a: E-3513
+  b: p2::5D5qHUWBTGfa0SRdJl68-49
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-49
+    to: E-3513
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3512::p2::5D5qHUWBTGfa0SRdJl68-49
+  a: E-3512
+  b: p2::5D5qHUWBTGfa0SRdJl68-49
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-49
+    to: E-3512
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::T-3509::p2::5D5qHUWBTGfa0SRdJl68-49
+  a: T-3509
+  b: p2::5D5qHUWBTGfa0SRdJl68-49
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-49
+    to: T-3509
+    directed: true
+    media_label: 甲醇水溶液
+  support: single
+  undirected_any: false
+- id: E::E-3513::p2::5D5qHUWBTGfa0SRdJl68-51
+  a: E-3513
+  b: p2::5D5qHUWBTGfa0SRdJl68-51
+  claims:
+  - source: p2
+    from: E-3513
+    to: p2::5D5qHUWBTGfa0SRdJl68-51
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::E-3512::p2::5D5qHUWBTGfa0SRdJl68-53
+  a: E-3512
+  b: p2::5D5qHUWBTGfa0SRdJl68-53
+  claims:
+  - source: p2
+    from: E-3512
+    to: p2::5D5qHUWBTGfa0SRdJl68-53
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::V-402::p2::5D5qHUWBTGfa0SRdJl68-53
+  a: V-402
+  b: p2::5D5qHUWBTGfa0SRdJl68-53
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-53
+    to: V-402
+    directed: true
+    media_label: null
+  support: single
+  undirected_any: false
+- id: E::p2::5D5qHUWBTGfa0SRdJl68-49::p2::5D5qHUWBTGfa0SRdJl68-49
+  a: p2::5D5qHUWBTGfa0SRdJl68-49
+  b: p2::5D5qHUWBTGfa0SRdJl68-49
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-49
+    to: p2::5D5qHUWBTGfa0SRdJl68-49
+    directed: true
+    media_label: 萃取水
+  support: single
+  undirected_any: false
+- id: E::E-3510::T-3502
+  a: E-3510
+  b: T-3502
+  claims:
+  - source: p2
+    from: E-3510
+    to: T-3502
+    directed: true
+    media_label: 甲醇水溶液
+  support: single
+  undirected_any: false
+- id: E::V-3502::p2::5D5qHUWBTGfa0SRdJl68-96
+  a: V-3502
+  b: p2::5D5qHUWBTGfa0SRdJl68-96
+  claims:
+  - source: p2
+    from: p2::5D5qHUWBTGfa0SRdJl68-96
+    to: V-3502
+    directed: true
+    media_label: 反应混合物
+  support: single
+  undirected_any: false
+dangles:
+- source: p1r
+  cell_id: kW8mp5fpktJNJ6bN1REy-7
+  anchored: E-302
+  directed_claim: false
+  media_label: null
+- source: p2
+  cell_id: 5D5qHUWBTGfa0SRdJl68-59
+  anchored: E-3513
+  directed_claim: true
+  media_label: 蒸汽
+hypotheses:
+  duplicate_identity:
+  - tag: P-3505
+    members:
+    - p2::5D5qHUWBTGfa0SRdJl68-28
+    - p2::5D5qHUWBTGfa0SRdJl68-39
+    hypotheses:
+    - H_same
+    - H_segment
+    - H_distinct_misnomer
+  - tag: T-3501A
+    members:
+    - p2::5D5qHUWBTGfa0SRdJl68-35
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    hypotheses:
+    - H_same
+    - H_segment
+    - H_distinct_misnomer
+  direction:
+  - edge: E::T-301::V-302
+    domain: enumerate
+    claims: []
+  - edge: E::E-301::T-301
+    domain: enumerate
+    claims: []
+  - edge: E::E-301::V-301
+    domain: enumerate
+    claims: []
+  - edge: E::E-302::T-302
+    domain: enumerate
+    claims: []
+  - edge: E::E-303::T-302
+    domain: enumerate
+    claims: []
+  - edge: E::E-301::T-302
+    domain: enumerate
+    claims: []
+  - edge: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-15
+    domain: enumerate
+    claims: []
+  - edge: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-22
+    domain: enumerate
+    claims: []
+  - edge: E::p1r::kW8mp5fpktJNJ6bN1REy-15::p1r::kW8mp5fpktJNJ6bN1REy-16
+    domain: enumerate
+    claims: []
+  - edge: E::p1r::kW8mp5fpktJNJ6bN1REy-22::p1r::kW8mp5fpktJNJ6bN1REy-24
+    domain: enumerate
+    claims: []
+  - edge: E::E-3501::R-3501A
+    domain: enumerate
+    claims: []
+  - edge: E::R-3501A::R-3501B
+    domain: enumerate
+    claims: []
+  functional:
+  - entity: p2::5D5qHUWBTGfa0SRdJl68-29
+    reason: unknown_marker/断管/胶布/悬空，是否功能管待枚举
+  - entity: p2::5D5qHUWBTGfa0SRdJl68-38
+    reason: unknown_marker/断管/胶布/悬空，是否功能管待枚举
+  - entity: p2::5D5qHUWBTGfa0SRdJl68-51
+    reason: unknown_marker/断管/胶布/悬空，是否功能管待枚举
+  - entity: p2::5D5qHUWBTGfa0SRdJl68-85
+    reason: unknown_marker/断管/胶布/悬空，是否功能管待枚举
+  - entity: p2::5D5qHUWBTGfa0SRdJl68-96
+    reason: unknown_marker/断管/胶布/悬空，是否功能管待枚举
+  candidate_align:
+  - a: p1r::kW8mp5fpktJNJ6bN1REy-14
+    b: p2::5D5qHUWBTGfa0SRdJl68-5
+    note: person1 的 C4 ↔ person2 未标号 C4原料混合罐；候选对齐，不强制

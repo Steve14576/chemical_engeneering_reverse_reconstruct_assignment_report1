@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-"""person2 冻结 drawio 的机械归一化（mechanical normalize）。
+"""[SUPERSEDED 2026-09-04] 本脚本已由 normalize_drawio.py（参数化通用版）取代，暂留不删仅作历史参照。
+请勿再运行本脚本生成 person2.normalized.yaml；person2 的现行生成命令见 SOURCE_PROVENANCE.md 衍生物登记第 5 条。
+
+person2 冻结 drawio 的机械归一化（mechanical normalize）。
 
 性质声明：本脚本只做**机械**转换，不含任何工艺解释 / 脑补：
   - 先校验冻结源 SHA256，不一致即 abort（防漂移）；

@@ -1,10 +1,11 @@
 source:
   id: person2
+  level: L1
   raw_file: work/raw_material/imperfectmapping_person2.drawio
   raw_sha256: 3cf04c0b7a1dc28a8f45f5f422e02b6c111e3592da0b8dd5c45cb9459f5e9d3a
   transform: mechanical_xml_parse
-  transform_script: work/derived/normalize_person2.py
-  fidelity: lossless_for_drawio_content
+  transform_script: work/derived/normalize_drawio.py
+  edge_semantics: directed=false 表示无向（方向待枚举）；directed=true 时 src→dst 仅为该源的方向主张，非真值
   note: 中文功能名/介质标签原样携带，仅作 Stage-2 先验，不参与本步拓扑判定
 nodes:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-1
@@ -20,8 +21,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-2
   raw_head: E-301
   name_zh: 中间换热器
@@ -35,8 +37,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-3
   raw_head: T-302
   name_zh: 解吸塔
@@ -50,8 +53,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: column
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-4
   raw_head: FV301
   name_zh: null
@@ -65,8 +69,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-5
   raw_head: C4原料混合罐
   name_zh: null
@@ -80,8 +85,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-6
   raw_head: V-301
   name_zh: 解吸塔回流罐
@@ -95,8 +101,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-7
   raw_head: E-303
   name_zh: 解吸塔釜再沸器
@@ -110,8 +117,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-8
   raw_head: V-3506
   name_zh: C4原料罐
@@ -125,8 +133,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-9
   raw_head: V-3501
   name_zh: 甲醇原料罐
@@ -140,8 +149,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-10
   raw_head: P-3511
   name_zh: C4原料泵
@@ -155,8 +165,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-12
   raw_head: P-3501
   name_zh: 甲醇进料泵
@@ -170,8 +181,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-13
   raw_head: P-3503
   name_zh: 反应塔底循环泵
@@ -185,8 +197,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-14
   raw_head: P-3502
   name_zh: 反应塔底循环泵
@@ -200,8 +213,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-15
   raw_head: E-3501
   name_zh: 反应进料加热釜
@@ -215,8 +229,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-16
   raw_head: E-3503
   name_zh: 二段冷凝器
@@ -230,8 +245,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-17
   raw_head: E-3502
   name_zh: 一段反应器
@@ -247,8 +263,9 @@ nodes:
     name_implies: R
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-18
   raw_head: R-3501B
   name_zh: 二段醚化反应器
@@ -262,8 +279,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: reactor
   degree:
-    in: 0
-    out: 1
+    incident: 1
+    dir_in: 0
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-19
   raw_head: R-3501A
   name_zh: 一段醚化反应器
@@ -277,8 +295,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: reactor
   degree:
-    in: 0
-    out: 1
+    incident: 1
+    dir_in: 0
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-21
   raw_head: V-3502
   name_zh: 醚后C4罐
@@ -292,8 +311,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-23
   raw_head: E-3508
   name_zh: MTBE产品冷却器
@@ -307,8 +327,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-25
   raw_head: E-3505
   name_zh: 催化蒸馏塔进料MTBE产品换热器
@@ -322,8 +343,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-28
   raw_head: P-3505
   name_zh: 催化塔下塔进料器
@@ -337,8 +359,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 2
-    out: 1
+    incident: 3
+    dir_in: 2
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-29
   raw_head: 断了？
   name_zh: null
@@ -352,8 +375,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 0
-    out: 1
+    incident: 1
+    dir_in: 0
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-33
   raw_head: T-3501B
   name_zh: 催化蒸馏塔下塔
@@ -367,8 +391,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: column
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-34
   raw_head: E-3506
   name_zh: 催化蒸馏塔重沸器
@@ -382,8 +407,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 0
-    out: 0
+    incident: 0
+    dir_in: 0
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-35
   raw_head: T-3501A
   name_zh: 催化蒸馏塔上塔
@@ -397,8 +423,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: column
   degree:
-    in: 2
-    out: 2
+    incident: 4
+    dir_in: 2
+    dir_out: 2
 - cell_id: 5D5qHUWBTGfa0SRdJl68-36
   raw_head: E-3509
   name_zh: 萃取塔进料冷却器
@@ -412,8 +439,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-37
   raw_head: T-3512
   name_zh: MTBE出料泵
@@ -429,8 +457,9 @@ nodes:
     name_implies: P
   shape_class: column
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-38
   raw_head: 某黑盒管线
   name_zh: null
@@ -444,8 +473,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 1
-    out: 0
+    incident: 1
+    dir_in: 1
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-39
   raw_head: P-3505
   name_zh: 催化塔上塔进料泵
@@ -459,8 +489,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: pump
   degree:
-    in: 0
-    out: 2
+    incident: 2
+    dir_in: 0
+    dir_out: 2
 - cell_id: 5D5qHUWBTGfa0SRdJl68-40
   raw_head: E-3507
   name_zh: 催化蒸馏塔冷却器
@@ -474,8 +505,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 2
-    out: 0
+    incident: 2
+    dir_in: 2
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-41
   raw_head: T-3502
   name_zh: 甲醇萃取塔
@@ -489,8 +521,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: column
   degree:
-    in: 2
-    out: 2
+    incident: 4
+    dir_in: 2
+    dir_out: 2
 - cell_id: 5D5qHUWBTGfa0SRdJl68-42
   raw_head: E-3510
   name_zh: 萃取水冷凝器
@@ -504,8 +537,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-43
   raw_head: T-3509
   name_zh: 精馏塔采出泵
@@ -521,8 +555,9 @@ nodes:
     name_implies: P
   shape_class: column
   degree:
-    in: 2
-    out: 1
+    incident: 3
+    dir_in: 2
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-45
   raw_head: V-3503
   name_zh: 催化蒸馏回流塔
@@ -538,8 +573,9 @@ nodes:
     name_implies: T
   shape_class: vessel
   degree:
-    in: 1
-    out: 2
+    incident: 3
+    dir_in: 1
+    dir_out: 2
 - cell_id: 5D5qHUWBTGfa0SRdJl68-47
   raw_head: V-3504
   name_zh: C4残液罐
@@ -553,8 +589,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-48
   raw_head: T-3508
   name_zh: C4出料罐泵
@@ -570,8 +607,9 @@ nodes:
     name_implies: P
   shape_class: column
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-49
   raw_head: T-3501A
   name_zh: 甲醇回收塔 主要介质：C4，甲醇，萃取水
@@ -585,8 +623,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: column
   degree:
-    in: 1
-    out: 4
+    incident: 5
+    dir_in: 1
+    dir_out: 4
 - cell_id: 5D5qHUWBTGfa0SRdJl68-50
   raw_head: E-3513
   name_zh: 甲醇回收塔重沸器 管程：蒸汽，壳程：萃取水
@@ -600,8 +639,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 2
-    out: 1
+    incident: 3
+    dir_in: 2
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-51
   raw_head: 放空？
   name_zh: null
@@ -615,8 +655,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 1
-    out: 0
+    incident: 1
+    dir_in: 1
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-52
   raw_head: E-3512
   name_zh: 甲醇回收塔冷凝器
@@ -630,8 +671,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: exchanger
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-53
   raw_head: 甲醇回收塔回流罐
   name_zh: 主要介质：甲醇，C4
@@ -645,8 +687,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 1
-    out: 1
+    incident: 2
+    dir_in: 1
+    dir_out: 1
 - cell_id: 5D5qHUWBTGfa0SRdJl68-54
   raw_head: V-402
   name_zh: 混合罐
@@ -660,8 +703,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: vessel
   degree:
-    in: 1
-    out: 0
+    incident: 1
+    dir_in: 1
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-85
   raw_head: 断了？
   name_zh: null
@@ -675,8 +719,9 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 1
-    out: 0
+    incident: 1
+    dir_in: 1
+    dir_out: 0
 - cell_id: 5D5qHUWBTGfa0SRdJl68-96
   raw_head: 某管道汇合
   name_zh: null
@@ -690,12 +735,14 @@ nodes:
   prefix_type_mismatch: null
   shape_class: unknown
   degree:
-    in: 2
-    out: 1
+    incident: 3
+    dir_in: 2
+    dir_out: 1
 edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-97
   src_cell: 5D5qHUWBTGfa0SRdJl68-18
   dst_cell: 5D5qHUWBTGfa0SRdJl68-96
+  directed: true
   media_label: null
   waypoints: []
   src_tag: R-3501B
@@ -703,6 +750,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-98
   src_cell: 5D5qHUWBTGfa0SRdJl68-19
   dst_cell: 5D5qHUWBTGfa0SRdJl68-96
+  directed: true
   media_label: null
   waypoints: []
   src_tag: R-3501A
@@ -710,6 +758,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-95
   src_cell: 5D5qHUWBTGfa0SRdJl68-21
   dst_cell: 5D5qHUWBTGfa0SRdJl68-28
+  directed: true
   media_label: null
   waypoints: []
   src_tag: V-3502
@@ -717,6 +766,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-94
   src_cell: 5D5qHUWBTGfa0SRdJl68-28
   dst_cell: 5D5qHUWBTGfa0SRdJl68-33
+  directed: true
   media_label: null
   waypoints: []
   src_tag: P-3505
@@ -724,6 +774,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-101
   src_cell: 5D5qHUWBTGfa0SRdJl68-29
   dst_cell: 5D5qHUWBTGfa0SRdJl68-28
+  directed: true
   media_label: null
   waypoints: []
   src_tag: null
@@ -731,6 +782,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-93
   src_cell: 5D5qHUWBTGfa0SRdJl68-33
   dst_cell: 5D5qHUWBTGfa0SRdJl68-35
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3501B
@@ -738,6 +790,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-88
   src_cell: 5D5qHUWBTGfa0SRdJl68-35
   dst_cell: 5D5qHUWBTGfa0SRdJl68-37
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3501A
@@ -745,6 +798,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-91
   src_cell: 5D5qHUWBTGfa0SRdJl68-35
   dst_cell: 5D5qHUWBTGfa0SRdJl68-40
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3501A
@@ -752,6 +806,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-90
   src_cell: 5D5qHUWBTGfa0SRdJl68-36
   dst_cell: 5D5qHUWBTGfa0SRdJl68-41
+  directed: true
   media_label: null
   waypoints: []
   src_tag: E-3509
@@ -759,6 +814,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-87
   src_cell: 5D5qHUWBTGfa0SRdJl68-37
   dst_cell: 5D5qHUWBTGfa0SRdJl68-38
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3512
@@ -766,6 +822,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-89
   src_cell: 5D5qHUWBTGfa0SRdJl68-39
   dst_cell: 5D5qHUWBTGfa0SRdJl68-36
+  directed: true
   media_label: null
   waypoints: []
   src_tag: P-3505
@@ -773,6 +830,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-92
   src_cell: 5D5qHUWBTGfa0SRdJl68-39
   dst_cell: 5D5qHUWBTGfa0SRdJl68-35
+  directed: true
   media_label: null
   waypoints: []
   src_tag: P-3505
@@ -780,6 +838,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-55
   src_cell: 5D5qHUWBTGfa0SRdJl68-41
   dst_cell: 5D5qHUWBTGfa0SRdJl68-43
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3502
@@ -787,6 +846,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-82
   src_cell: 5D5qHUWBTGfa0SRdJl68-41
   dst_cell: 5D5qHUWBTGfa0SRdJl68-47
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3502
@@ -794,6 +854,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-75
   src_cell: 5D5qHUWBTGfa0SRdJl68-43
   dst_cell: 5D5qHUWBTGfa0SRdJl68-45
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3509
@@ -801,6 +862,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-76
   src_cell: 5D5qHUWBTGfa0SRdJl68-45
   dst_cell: 5D5qHUWBTGfa0SRdJl68-42
+  directed: true
   media_label: 甲醇水溶液
   waypoints: []
   src_tag: V-3503
@@ -808,6 +870,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-83
   src_cell: 5D5qHUWBTGfa0SRdJl68-45
   dst_cell: 5D5qHUWBTGfa0SRdJl68-40
+  directed: true
   media_label: null
   waypoints:
   - x: 2852.6
@@ -821,6 +884,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-84
   src_cell: 5D5qHUWBTGfa0SRdJl68-47
   dst_cell: 5D5qHUWBTGfa0SRdJl68-48
+  directed: true
   media_label: null
   waypoints:
   - x: 2870.0
@@ -834,6 +898,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-86
   src_cell: 5D5qHUWBTGfa0SRdJl68-48
   dst_cell: 5D5qHUWBTGfa0SRdJl68-85
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3508
@@ -841,6 +906,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-56
   src_cell: 5D5qHUWBTGfa0SRdJl68-49
   dst_cell: 5D5qHUWBTGfa0SRdJl68-50
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3501A
@@ -848,6 +914,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-66
   src_cell: 5D5qHUWBTGfa0SRdJl68-49
   dst_cell: 5D5qHUWBTGfa0SRdJl68-52
+  directed: true
   media_label: null
   waypoints: []
   src_tag: T-3501A
@@ -855,6 +922,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-71
   src_cell: 5D5qHUWBTGfa0SRdJl68-49
   dst_cell: 5D5qHUWBTGfa0SRdJl68-43
+  directed: true
   media_label: 甲醇水溶液
   waypoints:
   - x: 3002.5
@@ -866,6 +934,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-57
   src_cell: 5D5qHUWBTGfa0SRdJl68-50
   dst_cell: 5D5qHUWBTGfa0SRdJl68-51
+  directed: true
   media_label: null
   waypoints: []
   src_tag: E-3513
@@ -873,6 +942,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-62
   src_cell: 5D5qHUWBTGfa0SRdJl68-52
   dst_cell: 5D5qHUWBTGfa0SRdJl68-53
+  directed: true
   media_label: null
   waypoints: []
   src_tag: E-3512
@@ -880,6 +950,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-63
   src_cell: 5D5qHUWBTGfa0SRdJl68-53
   dst_cell: 5D5qHUWBTGfa0SRdJl68-54
+  directed: true
   media_label: null
   waypoints: []
   src_tag: null
@@ -887,6 +958,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-59
   src_cell: null
   dst_cell: 5D5qHUWBTGfa0SRdJl68-50
+  directed: true
   media_label: 蒸汽
   waypoints: []
   src_tag: null
@@ -894,6 +966,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-69
   src_cell: 5D5qHUWBTGfa0SRdJl68-49
   dst_cell: 5D5qHUWBTGfa0SRdJl68-49
+  directed: true
   media_label: 萃取水
   waypoints:
   - x: 2980.0
@@ -909,6 +982,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-79
   src_cell: 5D5qHUWBTGfa0SRdJl68-42
   dst_cell: 5D5qHUWBTGfa0SRdJl68-41
+  directed: true
   media_label: 甲醇水溶液
   waypoints:
   - x: 2750.0
@@ -920,6 +994,7 @@ edges:
 - cell_id: 5D5qHUWBTGfa0SRdJl68-99
   src_cell: 5D5qHUWBTGfa0SRdJl68-96
   dst_cell: 5D5qHUWBTGfa0SRdJl68-21
+  directed: true
   media_label: 反应混合物
   waypoints: []
   src_tag: null

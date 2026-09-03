@@ -8,6 +8,13 @@
 |---|---|---|
 | imperfectmapping_person1.jpg | dca46e3161f80f5ab3698ce2e06dfdbe04ea3ac505da1ac81d50461bd9c54dc5 | 2026-09-03 |
 | imperfectmapping_person2.drawio | 3cf04c0b7a1dc28a8f45f5f422e02b6c111e3592da0b8dd5c45cb9459f5e9d3a | 2026-09-03 |
+| terriblemapping_person1.drawio | 5479f6bb6bde37f5055bc64bb53f5638cac2e6797d20ebcd037f468f497362bb | 2026-09-04 |
+
+### 冻结源补充说明
+
+- `terriblemapping_person1.drawio` = user 于 2026-09-04 **重画的 person1**（drawio）。user 声明全图无向；解析以 `--all-undirected` 源级覆盖（个别边漏写 endArrow=none）。命名沿用旧前缀 terriblemapping，系 user 选择，不改名。
+- `terriblemapping_person2.drawio` = 与冻结版 `imperfectmapping_person2.drawio` **内容等价**的重复存档（仅 mxGraphModel dx/dy 视图偏移不同：1563/1089 vs 1544/1041）。**非独立源**，不参与任何下游；建议移 personal/trash（待 user 同意）。
+- `imperfectmapping_person1.jpg` 仍为 person1 的现场原始记录；`terriblemapping_person1.drawio` 是其重画数字化，二者关系见衍生物登记第 6 条。
 
 ##  standing rule
 
@@ -59,3 +66,19 @@
    - 断言政策（user 拍板 2026-09-03）：不做逐条置信度 / 不留活路，模糊处直接断言；真正追不到的（端点不可见/涂鸦/未画）仍留 unknowns 不伪造；未标注闭合形状仍不立为节点。
    - 交叉验证注意：本 L1 含 user 断言；person1-vs-person2 交叉验证时，断言项视为 user 判断而非 person1 独立观测。
    - 保真度：low_to_medium。person1 未画 3500 系其余设备；300 系多数连线追不实。
+4. **衍生物 `work/derived/person1_redraw.normalized.yaml`（L1, 机械）**
+   - 生成方式：`normalize_drawio.py --all-undirected` 对冻结的 `terriblemapping_person1.drawio` 机械解析。
+   - 摘要：nodes=16（12 标签 + 4 unlabeled 空框）、edges=13 全无向、media_labels=0；missing=[C4]（"C4" 不合位号正则，原样保留为 missing，不脑补位号）；无 duplicate / mismatch / unknown_marker。
+   - 无向语义：user 声明全图无向，方向一律待 L3 枚举；src/dst 顺序不携带方向信息。
+5. **脚本泛化（2026-09-04）**：`normalize_drawio.py`（参数化：--raw/--sha/--out/--source-id/--all-undirected）取代 `normalize_person2.py`（后者标 SUPERSEDED 暂留不删）。`person2.normalized.yaml` 已用新脚本复跑：节点/边/判定摘要与旧版一致（45/29/6；duplicate=[P-3505,T-3501A]；mismatch=[E-3502,T-3512,T-3509,V-3503,T-3508]；unknown_marker=5），仅 schema 扩展——边加 `directed` 字段、度数改为 `{incident, dir_in, dir_out}`、source 加 `level`/`edge_semantics`。
+6. **person1 两版 L1 的关系**：`person1.normalized.yaml`（photo 断言版）保留作对照/历史；`person1_redraw.normalized.yaml` 为 person1 的**新 L1 输入**。二者在 300 系中段实质分歧（E-301/E-302/V-301/T-302/E-303 邻接关系互斥），且 redraw 丢弃了 photo-L1 的 U1/U2/U4 候选。**分歧不裁决**，进 L2 冲突集 + L3 枚举。
+7. **衍生物 `work/derived/observations.merged.yaml`（L2）**
+   - 生成方式：`merge_observations.py` 机械合并 person1_redraw + person2 两份 L1。
+   - 政策：tag 精确对齐；重号/缺号/未标注源内限定；**缺席≠冲突**（person2 的 300 系 degree=0 是没画不是反对）；假设只登记不裁决；photo 断言版排除（仅作对照）。
+   - 摘要：entities=52、edges=40（**corroborated=0**、single=40）、dangles=2、dup_groups=[P-3505, T-3501A]、direction_vars=12、functional_vars=5。
+   - **重要事实**：两源在"边"层面零重叠（corroborated=0），重叠仅在节点 tag——两人各自记录了互不相交的连线集合。交叉验证在边层面为空集，合并实为并集+节点对齐；此即测绘缺陷证据之一，进报告"测绘问题分析"。
+8. **衍生物 `work/derived/solver_result_P0.yaml` / `solver_result_P0h.yaml`（L3）**
+   - 求解器：`solve_topology.py` v2，**纯 Python 全枚举**（外层 128 假设世界 × 内层悬空附着全枚举）。**CP-SAT/ortools 弃用**：本环境 ortools 9.15.6755 的 `CpSolver.Solve` 对最小模型即触发 0xC0000005 访问违例（与建模无关），已 `uv remove ortools`。
+   - P0 严格：128 世界全 infeasible（reason=degree_deficit）→ **盲逆在闭合公理下不可解**之实证。
+   - P0h（`--allow-hidden` 承认漏画）：27648 最优世界；stable=40、ambiguous=0、absent=0；hidden_need min/max/mean = 15/18/16.70（即至少约 17 条未观测边才能闭合度数）。
+   - **构造性 caveat**：P0h 把观测边当公理（尚无 drop/fake 变量），故 stable=40/ambiguous=0 **不表示歧义已解决**；不确定性集中于 hidden 边与悬空附着（dangle 附着频率均匀 = P0 对其完全无信息）。显形歧义需 P2（观测边 drop 变量 + 工艺语法候选 hidden 边）。

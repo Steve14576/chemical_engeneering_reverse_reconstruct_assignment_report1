@@ -1,0 +1,372 @@
+source:
+  id: person1_redraw
+  level: L1
+  raw_file: work/raw_material/terriblemapping_person1.drawio
+  raw_sha256: 5479f6bb6bde37f5055bc64bb53f5638cac2e6797d20ebcd037f468f497362bb
+  transform: mechanical_xml_parse
+  transform_script: work/derived/normalize_drawio.py
+  edge_semantics: directed=false 表示无向（方向待枚举）；directed=true 时 src→dst 仅为该源的方向主张，非真值
+  edge_semantics_override: user 声明全图无向；逐边 endArrow 判定被源级覆盖
+  note: 中文功能名/介质标签原样携带，仅作 Stage-2 先验，不参与本步拓扑判定
+nodes:
+- cell_id: kW8mp5fpktJNJ6bN1REy-1
+  raw_head: V-302
+  name_zh: null
+  geom:
+    x: 780.0
+    y: 1390.0
+    width: 70.0
+    height: 150.0
+  tag: V-302
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-2
+  raw_head: T-301
+  name_zh: null
+  geom:
+    x: 930.0
+    y: 1350.0
+    width: 50.0
+    height: 120.0
+  tag: T-301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-3
+  raw_head: E-301
+  name_zh: null
+  geom:
+    x: 1110.0
+    y: 1330.0
+    width: 50.0
+    height: 120.0
+  tag: E-301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    incident: 3
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-4
+  raw_head: E-302
+  name_zh: null
+  geom:
+    x: 1020.0
+    y: 1220.0
+    width: 120.0
+    height: 60.0
+  tag: E-302
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-9
+  raw_head: T-302
+  name_zh: null
+  geom:
+    x: 1240.0
+    y: 1310.0
+    width: 70.0
+    height: 130.0
+  tag: T-302
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    incident: 3
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-12
+  raw_head: E-303
+  name_zh: null
+  geom:
+    x: 1340.0
+    y: 1350.0
+    width: 60.0
+    height: 30.0
+  tag: E-303
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-14
+  raw_head: C4
+  name_zh: null
+  geom:
+    x: 1510.0
+    y: 1360.0
+    width: 60.0
+    height: 60.0
+  tag: null
+  tag_status: missing
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-15
+  raw_head: ''
+  name_zh: null
+  geom:
+    x: 1520.0
+    y: 1480.0
+    width: 30.0
+    height: 60.0
+  tag: null
+  tag_status: unlabeled
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-16
+  raw_head: ''
+  name_zh: null
+  geom:
+    x: 1520.0
+    y: 1570.0
+    width: 30.0
+    height: 60.0
+  tag: null
+  tag_status: unlabeled
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-22
+  raw_head: ''
+  name_zh: null
+  geom:
+    x: 1590.0
+    y: 1490.0
+    width: 30.0
+    height: 60.0
+  tag: null
+  tag_status: unlabeled
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-24
+  raw_head: ''
+  name_zh: null
+  geom:
+    x: 1590.0
+    y: 1590.0
+    width: 30.0
+    height: 60.0
+  tag: null
+  tag_status: unlabeled
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-26
+  raw_head: E-3501
+  name_zh: null
+  geom:
+    x: 1720.0
+    y: 1330.0
+    width: 50.0
+    height: 110.0
+  tag: E-3501
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-27
+  raw_head: R-3501A
+  name_zh: null
+  geom:
+    x: 1820.0
+    y: 1335.0
+    width: 50.0
+    height: 110.0
+  tag: R-3501A
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: reactor
+  degree:
+    incident: 2
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-29
+  raw_head: R-3501B
+  name_zh: null
+  geom:
+    x: 1820.0
+    y: 1510.0
+    width: 50.0
+    height: 90.0
+  tag: R-3501B
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: reactor
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-31
+  raw_head: E-3505
+  name_zh: null
+  geom:
+    x: 1930.0
+    y: 1360.0
+    width: 120.0
+    height: 60.0
+  tag: E-3505
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    incident: 0
+    dir_in: 0
+    dir_out: 0
+- cell_id: kW8mp5fpktJNJ6bN1REy-32
+  raw_head: V-301
+  name_zh: null
+  geom:
+    x: 1330.0
+    y: 1200.0
+    width: 120.0
+    height: 60.0
+  tag: V-301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    incident: 1
+    dir_in: 0
+    dir_out: 0
+edges:
+- cell_id: kW8mp5fpktJNJ6bN1REy-5
+  src_cell: kW8mp5fpktJNJ6bN1REy-1
+  dst_cell: kW8mp5fpktJNJ6bN1REy-2
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: V-302
+  dst_tag: T-301
+- cell_id: kW8mp5fpktJNJ6bN1REy-6
+  src_cell: kW8mp5fpktJNJ6bN1REy-2
+  dst_cell: kW8mp5fpktJNJ6bN1REy-3
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: T-301
+  dst_tag: E-301
+- cell_id: kW8mp5fpktJNJ6bN1REy-33
+  src_cell: kW8mp5fpktJNJ6bN1REy-3
+  dst_cell: kW8mp5fpktJNJ6bN1REy-32
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: E-301
+  dst_tag: V-301
+- cell_id: kW8mp5fpktJNJ6bN1REy-7
+  src_cell: kW8mp5fpktJNJ6bN1REy-4
+  dst_cell: null
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: E-302
+  dst_tag: null
+- cell_id: kW8mp5fpktJNJ6bN1REy-11
+  src_cell: kW8mp5fpktJNJ6bN1REy-4
+  dst_cell: kW8mp5fpktJNJ6bN1REy-9
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: E-302
+  dst_tag: T-302
+- cell_id: kW8mp5fpktJNJ6bN1REy-13
+  src_cell: kW8mp5fpktJNJ6bN1REy-9
+  dst_cell: kW8mp5fpktJNJ6bN1REy-12
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: T-302
+  dst_tag: E-303
+- cell_id: kW8mp5fpktJNJ6bN1REy-10
+  src_cell: kW8mp5fpktJNJ6bN1REy-3
+  dst_cell: kW8mp5fpktJNJ6bN1REy-9
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: E-301
+  dst_tag: T-302
+- cell_id: kW8mp5fpktJNJ6bN1REy-19
+  src_cell: kW8mp5fpktJNJ6bN1REy-14
+  dst_cell: kW8mp5fpktJNJ6bN1REy-15
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: null
+- cell_id: kW8mp5fpktJNJ6bN1REy-23
+  src_cell: kW8mp5fpktJNJ6bN1REy-14
+  dst_cell: kW8mp5fpktJNJ6bN1REy-22
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: null
+- cell_id: kW8mp5fpktJNJ6bN1REy-21
+  src_cell: kW8mp5fpktJNJ6bN1REy-15
+  dst_cell: kW8mp5fpktJNJ6bN1REy-16
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: null
+- cell_id: kW8mp5fpktJNJ6bN1REy-25
+  src_cell: kW8mp5fpktJNJ6bN1REy-22
+  dst_cell: kW8mp5fpktJNJ6bN1REy-24
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: null
+- cell_id: kW8mp5fpktJNJ6bN1REy-28
+  src_cell: kW8mp5fpktJNJ6bN1REy-26
+  dst_cell: kW8mp5fpktJNJ6bN1REy-27
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: E-3501
+  dst_tag: R-3501A
+- cell_id: kW8mp5fpktJNJ6bN1REy-30
+  src_cell: kW8mp5fpktJNJ6bN1REy-27
+  dst_cell: kW8mp5fpktJNJ6bN1REy-29
+  directed: false
+  media_label: null
+  waypoints: []
+  src_tag: R-3501A
+  dst_tag: R-3501B

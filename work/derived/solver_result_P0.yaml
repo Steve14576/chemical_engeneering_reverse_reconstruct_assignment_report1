@@ -1,0 +1,1845 @@
+meta:
+  level: L3
+  tier: P0
+  solver: 'pure_python_full_enumeration (CP-SAT abandoned: ortools wheel segfault
+    0xC0000005)'
+  input: work/derived/observations.merged.yaml
+  script: work/derived/solve_topology.py
+  allow_hidden: false
+  enumeration: worlds_outer=128 inner=full(dangle attach)
+  truncated_any: false
+summary:
+  combos_total: 128
+  worlds_optimal: 0
+  stable_edges: []
+  ambiguous_edges: []
+  absent_edges:
+  - edge:
+    - T-301
+    - V-302
+    id: E::T-301::V-302
+  - edge:
+    - E-301
+    - T-301
+    id: E::E-301::T-301
+  - edge:
+    - E-301
+    - V-301
+    id: E::E-301::V-301
+  - edge:
+    - E-302
+    - T-302
+    id: E::E-302::T-302
+  - edge:
+    - E-303
+    - T-302
+    id: E::E-303::T-302
+  - edge:
+    - E-301
+    - T-302
+    id: E::E-301::T-302
+  - edge:
+    - p1r::kW8mp5fpktJNJ6bN1REy-14
+    - p1r::kW8mp5fpktJNJ6bN1REy-15
+    id: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-15
+  - edge:
+    - p1r::kW8mp5fpktJNJ6bN1REy-14
+    - p1r::kW8mp5fpktJNJ6bN1REy-22
+    id: E::p1r::kW8mp5fpktJNJ6bN1REy-14::p1r::kW8mp5fpktJNJ6bN1REy-22
+  - edge:
+    - p1r::kW8mp5fpktJNJ6bN1REy-15
+    - p1r::kW8mp5fpktJNJ6bN1REy-16
+    id: E::p1r::kW8mp5fpktJNJ6bN1REy-15::p1r::kW8mp5fpktJNJ6bN1REy-16
+  - edge:
+    - p1r::kW8mp5fpktJNJ6bN1REy-22
+    - p1r::kW8mp5fpktJNJ6bN1REy-24
+    id: E::p1r::kW8mp5fpktJNJ6bN1REy-22::p1r::kW8mp5fpktJNJ6bN1REy-24
+  - edge:
+    - E-3501
+    - R-3501A
+    id: E::E-3501::R-3501A
+  - edge:
+    - R-3501A
+    - R-3501B
+    id: E::R-3501A::R-3501B
+  - edge:
+    - R-3501B
+    - p2::5D5qHUWBTGfa0SRdJl68-96
+    id: E::R-3501B::p2::5D5qHUWBTGfa0SRdJl68-96
+  - edge:
+    - R-3501A
+    - p2::5D5qHUWBTGfa0SRdJl68-96
+    id: E::R-3501A::p2::5D5qHUWBTGfa0SRdJl68-96
+  - edge:
+    - V-3502
+    - p2::5D5qHUWBTGfa0SRdJl68-28
+    id: E::V-3502::p2::5D5qHUWBTGfa0SRdJl68-28
+  - edge:
+    - T-3501B
+    - p2::5D5qHUWBTGfa0SRdJl68-28
+    id: E::T-3501B::p2::5D5qHUWBTGfa0SRdJl68-28
+  - edge:
+    - p2::5D5qHUWBTGfa0SRdJl68-28
+    - p2::5D5qHUWBTGfa0SRdJl68-29
+    id: E::p2::5D5qHUWBTGfa0SRdJl68-28::p2::5D5qHUWBTGfa0SRdJl68-29
+  - edge:
+    - T-3501B
+    - p2::5D5qHUWBTGfa0SRdJl68-35
+    id: E::T-3501B::p2::5D5qHUWBTGfa0SRdJl68-35
+  - edge:
+    - T-3512
+    - p2::5D5qHUWBTGfa0SRdJl68-35
+    id: E::T-3512::p2::5D5qHUWBTGfa0SRdJl68-35
+  - edge:
+    - E-3507
+    - p2::5D5qHUWBTGfa0SRdJl68-35
+    id: E::E-3507::p2::5D5qHUWBTGfa0SRdJl68-35
+  - edge:
+    - E-3509
+    - T-3502
+    id: E::E-3509::T-3502
+  - edge:
+    - T-3512
+    - p2::5D5qHUWBTGfa0SRdJl68-38
+    id: E::T-3512::p2::5D5qHUWBTGfa0SRdJl68-38
+  - edge:
+    - E-3509
+    - p2::5D5qHUWBTGfa0SRdJl68-39
+    id: E::E-3509::p2::5D5qHUWBTGfa0SRdJl68-39
+  - edge:
+    - p2::5D5qHUWBTGfa0SRdJl68-35
+    - p2::5D5qHUWBTGfa0SRdJl68-39
+    id: E::p2::5D5qHUWBTGfa0SRdJl68-35::p2::5D5qHUWBTGfa0SRdJl68-39
+  - edge:
+    - T-3502
+    - T-3509
+    id: E::T-3502::T-3509
+  - edge:
+    - T-3502
+    - V-3504
+    id: E::T-3502::V-3504
+  - edge:
+    - T-3509
+    - V-3503
+    id: E::T-3509::V-3503
+  - edge:
+    - E-3510
+    - V-3503
+    id: E::E-3510::V-3503
+  - edge:
+    - E-3507
+    - V-3503
+    id: E::E-3507::V-3503
+  - edge:
+    - T-3508
+    - V-3504
+    id: E::T-3508::V-3504
+  - edge:
+    - T-3508
+    - p2::5D5qHUWBTGfa0SRdJl68-85
+    id: E::T-3508::p2::5D5qHUWBTGfa0SRdJl68-85
+  - edge:
+    - E-3513
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    id: E::E-3513::p2::5D5qHUWBTGfa0SRdJl68-49
+  - edge:
+    - E-3512
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    id: E::E-3512::p2::5D5qHUWBTGfa0SRdJl68-49
+  - edge:
+    - T-3509
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    id: E::T-3509::p2::5D5qHUWBTGfa0SRdJl68-49
+  - edge:
+    - E-3513
+    - p2::5D5qHUWBTGfa0SRdJl68-51
+    id: E::E-3513::p2::5D5qHUWBTGfa0SRdJl68-51
+  - edge:
+    - E-3512
+    - p2::5D5qHUWBTGfa0SRdJl68-53
+    id: E::E-3512::p2::5D5qHUWBTGfa0SRdJl68-53
+  - edge:
+    - V-402
+    - p2::5D5qHUWBTGfa0SRdJl68-53
+    id: E::V-402::p2::5D5qHUWBTGfa0SRdJl68-53
+  - edge:
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    - p2::5D5qHUWBTGfa0SRdJl68-49
+    id: E::p2::5D5qHUWBTGfa0SRdJl68-49::p2::5D5qHUWBTGfa0SRdJl68-49
+  - edge:
+    - E-3510
+    - T-3502
+    id: E::E-3510::T-3502
+  - edge:
+    - V-3502
+    - p2::5D5qHUWBTGfa0SRdJl68-96
+    id: E::V-3502::p2::5D5qHUWBTGfa0SRdJl68-96
+  dangle_attachment_freq:
+  - {}
+  - {}
+  hidden_need: null
+iteration_log:
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 0
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 0
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 0
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 0
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 0
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 0
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 0
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
+- world:
+    merge:
+      P-3505: 1
+      T-3501A: 1
+    func:
+      p2::5D5qHUWBTGfa0SRdJl68-29: 1
+      p2::5D5qHUWBTGfa0SRdJl68-38: 1
+      p2::5D5qHUWBTGfa0SRdJl68-51: 1
+      p2::5D5qHUWBTGfa0SRdJl68-85: 1
+      p2::5D5qHUWBTGfa0SRdJl68-96: 1
+  feasible: false
+  reason: degree_deficit
+  n_deficient: 13
