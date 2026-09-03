@@ -5,5 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "matplotlib>=3.11.1",
+    "networkx>=3.6.1",
+    "numpy>=2.5.2",
+    "pathfinding==1.0.1",
+    "pyflowsheet>=0.2.2",
     "pyyaml>=6.0.3",
+    "scipy>=1.18.1",
 ]
