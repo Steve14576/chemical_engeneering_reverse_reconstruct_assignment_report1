@@ -82,3 +82,8 @@
    - P0 严格：128 世界全 infeasible（reason=degree_deficit）→ **盲逆在闭合公理下不可解**之实证。
    - P0h（`--allow-hidden` 承认漏画）：27648 最优世界；stable=40、ambiguous=0、absent=0；hidden_need min/max/mean = 15/18/16.70（即至少约 17 条未观测边才能闭合度数）。
    - **构造性 caveat**：P0h 把观测边当公理（尚无 drop/fake 变量），故 stable=40/ambiguous=0 **不表示歧义已解决**；不确定性集中于 hidden 边与悬空附着（dangle 附着频率均匀 = P0 对其完全无信息）。显形歧义需 P2（观测边 drop 变量 + 工艺语法候选 hidden 边）。
+9. **衍生物 `work/derived/solver_result_P2.yaml`（L3, P2）；W1 于此冻结**
+   - 求解器：`solve_topology_p2.py`，MILP via `scipy.optimize.milp` (HiGHS)；观测边 drop 变量（罚 1000）+ 通用精馏/命名语法候选 hidden 边（罚 100，19 条）+ 悬空附着 one-hot + slack（罚 5000）；重号合并外层 4 combo × 整数割枚举 12 解 = 48 解。
+   - 结果：观测边 40 条 drop_freq 全 0（观测边彼此自洽）；稳定语法推断 3 条（P-3511—V-3506、P-3501—V-3501、E-3505—T-3512）；歧义簇 3 个（E-3506↔上/下塔 24:24；P-3511 出口 4 选；P-3501 出口 4 选）。
+   - **稳定≠可信**：两悬空端附着虽 48/48 稳定，但为度数闭合逼出的跨单元几何 artifact（E-302 悬空线→C4 原料混合罐；蒸汽线端点→E-3508），不采纳为工艺事实，进先验复核清单。
+   - W1 冻结结论三层实证：① P0 盲逆 infeasible；② P0h hidden_need 15–18；③ P2 观测自洽 + 稳定骨架 + 3 歧义簇 + 2 可疑附着。歧义簇与可疑附着交 P4 强先验裁决（user 拍板后）。
