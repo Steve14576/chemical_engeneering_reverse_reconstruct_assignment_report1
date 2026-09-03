@@ -1,0 +1,926 @@
+source:
+  id: person2
+  raw_file: work/raw_material/imperfectmapping_person2.drawio
+  raw_sha256: 3cf04c0b7a1dc28a8f45f5f422e02b6c111e3592da0b8dd5c45cb9459f5e9d3a
+  transform: mechanical_xml_parse
+  transform_script: work/derived/normalize_person2.py
+  fidelity: lossless_for_drawio_content
+  note: 中文功能名/介质标签原样携带，仅作 Stage-2 先验，不参与本步拓扑判定
+nodes:
+- cell_id: 5D5qHUWBTGfa0SRdJl68-1
+  raw_head: E-302
+  name_zh: 解吸塔冷凝器
+  geom:
+    x: 100.0
+    y: 620.0
+    width: 120.0
+    height: 60.0
+  tag: E-302
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-2
+  raw_head: E-301
+  name_zh: 中间换热器
+  geom:
+    x: 100.0
+    y: 1060.0
+    width: 120.0
+    height: 60.0
+  tag: E-301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-3
+  raw_head: T-302
+  name_zh: 解吸塔
+  geom:
+    x: 240.0
+    y: 610.0
+    width: 120.0
+    height: 550.0
+  tag: T-302
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-4
+  raw_head: FV301
+  name_zh: null
+  geom:
+    x: 370.0
+    y: 960.0
+    width: 80.0
+    height: 60.0
+  tag: FV301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-5
+  raw_head: C4原料混合罐
+  name_zh: null
+  geom:
+    x: 490.0
+    y: 620.0
+    width: 120.0
+    height: 150.0
+  tag: null
+  tag_status: missing
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-6
+  raw_head: V-301
+  name_zh: 解吸塔回流罐
+  geom:
+    x: 490.0
+    y: 860.0
+    width: 120.0
+    height: 150.0
+  tag: V-301
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-7
+  raw_head: E-303
+  name_zh: 解吸塔釜再沸器
+  geom:
+    x: 490.0
+    y: 1080.0
+    width: 260.0
+    height: 40.0
+  tag: E-303
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-8
+  raw_head: V-3506
+  name_zh: C4原料罐
+  geom:
+    x: 800.0
+    y: 830.0
+    width: 120.0
+    height: 60.0
+  tag: V-3506
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-9
+  raw_head: V-3501
+  name_zh: 甲醇原料罐
+  geom:
+    x: 800.0
+    y: 910.0
+    width: 120.0
+    height: 60.0
+  tag: V-3501
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-10
+  raw_head: P-3511
+  name_zh: C4原料泵
+  geom:
+    x: 800.0
+    y: 1060.0
+    width: 120.0
+    height: 60.0
+  tag: P-3511
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-12
+  raw_head: P-3501
+  name_zh: 甲醇进料泵
+  geom:
+    x: 960.0
+    y: 1060.0
+    width: 120.0
+    height: 60.0
+  tag: P-3501
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-13
+  raw_head: P-3503
+  name_zh: 反应塔底循环泵
+  geom:
+    x: 1150.0
+    y: 980.0
+    width: 120.0
+    height: 60.0
+  tag: P-3503
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-14
+  raw_head: P-3502
+  name_zh: 反应塔底循环泵
+  geom:
+    x: 1150.0
+    y: 1080.0
+    width: 120.0
+    height: 60.0
+  tag: P-3502
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-15
+  raw_head: E-3501
+  name_zh: 反应进料加热釜
+  geom:
+    x: 1600.0
+    y: 670.0
+    width: 70.0
+    height: 220.0
+  tag: E-3501
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-16
+  raw_head: E-3503
+  name_zh: 二段冷凝器
+  geom:
+    x: 1500.0
+    y: 1070.0
+    width: 70.0
+    height: 120.0
+  tag: E-3503
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-17
+  raw_head: E-3502
+  name_zh: 一段反应器
+  geom:
+    x: 1590.0
+    y: 1070.0
+    width: 70.0
+    height: 120.0
+  tag: E-3502
+  tag_status: ok
+  prefix_type_mismatch:
+    tag_letter: E
+    name_implies: R
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-18
+  raw_head: R-3501B
+  name_zh: 二段醚化反应器
+  geom:
+    x: 1700.0
+    y: 660.0
+    width: 80.0
+    height: 560.0
+  tag: R-3501B
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: reactor
+  degree:
+    in: 0
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-19
+  raw_head: R-3501A
+  name_zh: 一段醚化反应器
+  geom:
+    x: 1815.0
+    y: 650.0
+    width: 80.0
+    height: 580.0
+  tag: R-3501A
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: reactor
+  degree:
+    in: 0
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-21
+  raw_head: V-3502
+  name_zh: 醚后C4罐
+  geom:
+    x: 1930.0
+    y: 690.0
+    width: 120.0
+    height: 60.0
+  tag: V-3502
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-23
+  raw_head: E-3508
+  name_zh: MTBE产品冷却器
+  geom:
+    x: 1930.0
+    y: 1080.0
+    width: 120.0
+    height: 60.0
+  tag: E-3508
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-25
+  raw_head: E-3505
+  name_zh: 催化蒸馏塔进料MTBE产品换热器
+  geom:
+    x: 1930.0
+    y: 1160.0
+    width: 120.0
+    height: 60.0
+  tag: E-3505
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-28
+  raw_head: P-3505
+  name_zh: 催化塔下塔进料器
+  geom:
+    x: 1930.0
+    y: 500.0
+    width: 120.0
+    height: 120.0
+  tag: P-3505
+  tag_status: duplicate
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 2
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-29
+  raw_head: 断了？
+  name_zh: null
+  geom:
+    x: 1960.0
+    y: 320.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: unknown_marker
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 0
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-33
+  raw_head: T-3501B
+  name_zh: 催化蒸馏塔下塔
+  geom:
+    x: 2120.0
+    y: 710.0
+    width: 60.0
+    height: 370.0
+  tag: T-3501B
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-34
+  raw_head: E-3506
+  name_zh: 催化蒸馏塔重沸器
+  geom:
+    x: 2080.0
+    y: 1110.0
+    width: 100.0
+    height: 60.0
+  tag: E-3506
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 0
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-35
+  raw_head: T-3501A
+  name_zh: 催化蒸馏塔上塔
+  geom:
+    x: 2221.0
+    y: 700.0
+    width: 60.0
+    height: 470.0
+  tag: T-3501A
+  tag_status: duplicate
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    in: 2
+    out: 2
+- cell_id: 5D5qHUWBTGfa0SRdJl68-36
+  raw_head: E-3509
+  name_zh: 萃取塔进料冷却器
+  geom:
+    x: 2326.0
+    y: 1200.0
+    width: 150.0
+    height: 60.0
+  tag: E-3509
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-37
+  raw_head: T-3512
+  name_zh: MTBE出料泵
+  geom:
+    x: 2341.0
+    y: 1380.0
+    width: 120.0
+    height: 60.0
+  tag: T-3512
+  tag_status: ok
+  prefix_type_mismatch:
+    tag_letter: T
+    name_implies: P
+  shape_class: column
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-38
+  raw_head: 某黑盒管线
+  name_zh: null
+  geom:
+    x: 2440.0
+    y: 1290.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: unknown_marker
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 1
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-39
+  raw_head: P-3505
+  name_zh: 催化塔上塔进料泵
+  geom:
+    x: 2350.0
+    y: 360.0
+    width: 120.0
+    height: 60.0
+  tag: P-3505
+  tag_status: duplicate
+  prefix_type_mismatch: null
+  shape_class: pump
+  degree:
+    in: 0
+    out: 2
+- cell_id: 5D5qHUWBTGfa0SRdJl68-40
+  raw_head: E-3507
+  name_zh: 催化蒸馏塔冷却器
+  geom:
+    x: 2350.0
+    y: 470.0
+    width: 360.0
+    height: 40.0
+  tag: E-3507
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 2
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-41
+  raw_head: T-3502
+  name_zh: 甲醇萃取塔
+  geom:
+    x: 2510.0
+    y: 660.0
+    width: 70.0
+    height: 490.0
+  tag: T-3502
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    in: 2
+    out: 2
+- cell_id: 5D5qHUWBTGfa0SRdJl68-42
+  raw_head: E-3510
+  name_zh: 萃取水冷凝器
+  geom:
+    x: 2610.0
+    y: 810.0
+    width: 120.0
+    height: 60.0
+  tag: E-3510
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-43
+  raw_head: T-3509
+  name_zh: 精馏塔采出泵
+  geom:
+    x: 2620.0
+    y: 1080.0
+    width: 120.0
+    height: 60.0
+  tag: T-3509
+  tag_status: ok
+  prefix_type_mismatch:
+    tag_letter: T
+    name_implies: P
+  shape_class: column
+  degree:
+    in: 2
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-45
+  raw_head: V-3503
+  name_zh: 催化蒸馏回流塔
+  geom:
+    x: 2790.0
+    y: 960.0
+    width: 70.0
+    height: 60.0
+  tag: V-3503
+  tag_status: ok
+  prefix_type_mismatch:
+    tag_letter: V
+    name_implies: T
+  shape_class: vessel
+  degree:
+    in: 1
+    out: 2
+- cell_id: 5D5qHUWBTGfa0SRdJl68-47
+  raw_head: V-3504
+  name_zh: C4残液罐
+  geom:
+    x: 2830.0
+    y: 680.0
+    width: 120.0
+    height: 60.0
+  tag: V-3504
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-48
+  raw_head: T-3508
+  name_zh: C4出料罐泵
+  geom:
+    x: 2730.0
+    y: 1340.0
+    width: 120.0
+    height: 120.0
+  tag: T-3508
+  tag_status: ok
+  prefix_type_mismatch:
+    tag_letter: T
+    name_implies: P
+  shape_class: column
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-49
+  raw_head: T-3501A
+  name_zh: 甲醇回收塔 主要介质：C4，甲醇，萃取水
+  geom:
+    x: 2980.0
+    y: 950.0
+    width: 90.0
+    height: 230.0
+  tag: T-3501A
+  tag_status: duplicate
+  prefix_type_mismatch: null
+  shape_class: column
+  degree:
+    in: 1
+    out: 4
+- cell_id: 5D5qHUWBTGfa0SRdJl68-50
+  raw_head: E-3513
+  name_zh: 甲醇回收塔重沸器 管程：蒸汽，壳程：萃取水
+  geom:
+    x: 3050.0
+    y: 1230.0
+    width: 120.0
+    height: 60.0
+  tag: E-3513
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 2
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-51
+  raw_head: 放空？
+  name_zh: null
+  geom:
+    x: 3050.0
+    y: 1340.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: unknown_marker
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 1
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-52
+  raw_head: E-3512
+  name_zh: 甲醇回收塔冷凝器
+  geom:
+    x: 3080.0
+    y: 740.0
+    width: 120.0
+    height: 60.0
+  tag: E-3512
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: exchanger
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-53
+  raw_head: 甲醇回收塔回流罐
+  name_zh: 主要介质：甲醇，C4
+  geom:
+    x: 3230.0
+    y: 740.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: missing
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 1
+    out: 1
+- cell_id: 5D5qHUWBTGfa0SRdJl68-54
+  raw_head: V-402
+  name_zh: 混合罐
+  geom:
+    x: 3350.0
+    y: 950.0
+    width: 120.0
+    height: 60.0
+  tag: V-402
+  tag_status: ok
+  prefix_type_mismatch: null
+  shape_class: vessel
+  degree:
+    in: 1
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-85
+  raw_head: 断了？
+  name_zh: null
+  geom:
+    x: 2730.0
+    y: 1500.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: unknown_marker
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 1
+    out: 0
+- cell_id: 5D5qHUWBTGfa0SRdJl68-96
+  raw_head: 某管道汇合
+  name_zh: null
+  geom:
+    x: 1760.0
+    y: 1310.0
+    width: 120.0
+    height: 60.0
+  tag: null
+  tag_status: unknown_marker
+  prefix_type_mismatch: null
+  shape_class: unknown
+  degree:
+    in: 2
+    out: 1
+edges:
+- cell_id: 5D5qHUWBTGfa0SRdJl68-97
+  src_cell: 5D5qHUWBTGfa0SRdJl68-18
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-96
+  media_label: null
+  waypoints: []
+  src_tag: R-3501B
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-98
+  src_cell: 5D5qHUWBTGfa0SRdJl68-19
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-96
+  media_label: null
+  waypoints: []
+  src_tag: R-3501A
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-95
+  src_cell: 5D5qHUWBTGfa0SRdJl68-21
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-28
+  media_label: null
+  waypoints: []
+  src_tag: V-3502
+  dst_tag: P-3505
+- cell_id: 5D5qHUWBTGfa0SRdJl68-94
+  src_cell: 5D5qHUWBTGfa0SRdJl68-28
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-33
+  media_label: null
+  waypoints: []
+  src_tag: P-3505
+  dst_tag: T-3501B
+- cell_id: 5D5qHUWBTGfa0SRdJl68-101
+  src_cell: 5D5qHUWBTGfa0SRdJl68-29
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-28
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: P-3505
+- cell_id: 5D5qHUWBTGfa0SRdJl68-93
+  src_cell: 5D5qHUWBTGfa0SRdJl68-33
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-35
+  media_label: null
+  waypoints: []
+  src_tag: T-3501B
+  dst_tag: T-3501A
+- cell_id: 5D5qHUWBTGfa0SRdJl68-88
+  src_cell: 5D5qHUWBTGfa0SRdJl68-35
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-37
+  media_label: null
+  waypoints: []
+  src_tag: T-3501A
+  dst_tag: T-3512
+- cell_id: 5D5qHUWBTGfa0SRdJl68-91
+  src_cell: 5D5qHUWBTGfa0SRdJl68-35
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-40
+  media_label: null
+  waypoints: []
+  src_tag: T-3501A
+  dst_tag: E-3507
+- cell_id: 5D5qHUWBTGfa0SRdJl68-90
+  src_cell: 5D5qHUWBTGfa0SRdJl68-36
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-41
+  media_label: null
+  waypoints: []
+  src_tag: E-3509
+  dst_tag: T-3502
+- cell_id: 5D5qHUWBTGfa0SRdJl68-87
+  src_cell: 5D5qHUWBTGfa0SRdJl68-37
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-38
+  media_label: null
+  waypoints: []
+  src_tag: T-3512
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-89
+  src_cell: 5D5qHUWBTGfa0SRdJl68-39
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-36
+  media_label: null
+  waypoints: []
+  src_tag: P-3505
+  dst_tag: E-3509
+- cell_id: 5D5qHUWBTGfa0SRdJl68-92
+  src_cell: 5D5qHUWBTGfa0SRdJl68-39
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-35
+  media_label: null
+  waypoints: []
+  src_tag: P-3505
+  dst_tag: T-3501A
+- cell_id: 5D5qHUWBTGfa0SRdJl68-55
+  src_cell: 5D5qHUWBTGfa0SRdJl68-41
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-43
+  media_label: null
+  waypoints: []
+  src_tag: T-3502
+  dst_tag: T-3509
+- cell_id: 5D5qHUWBTGfa0SRdJl68-82
+  src_cell: 5D5qHUWBTGfa0SRdJl68-41
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-47
+  media_label: null
+  waypoints: []
+  src_tag: T-3502
+  dst_tag: V-3504
+- cell_id: 5D5qHUWBTGfa0SRdJl68-75
+  src_cell: 5D5qHUWBTGfa0SRdJl68-43
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-45
+  media_label: null
+  waypoints: []
+  src_tag: T-3509
+  dst_tag: V-3503
+- cell_id: 5D5qHUWBTGfa0SRdJl68-76
+  src_cell: 5D5qHUWBTGfa0SRdJl68-45
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-42
+  media_label: 甲醇水溶液
+  waypoints: []
+  src_tag: V-3503
+  dst_tag: E-3510
+- cell_id: 5D5qHUWBTGfa0SRdJl68-83
+  src_cell: 5D5qHUWBTGfa0SRdJl68-45
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-40
+  media_label: null
+  waypoints:
+  - x: 2852.6
+    y: 1040.0
+  - x: 2970.0
+    y: 1040.0
+  - x: 2970.0
+    y: 490.0
+  src_tag: V-3503
+  dst_tag: E-3507
+- cell_id: 5D5qHUWBTGfa0SRdJl68-84
+  src_cell: 5D5qHUWBTGfa0SRdJl68-47
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-48
+  media_label: null
+  waypoints:
+  - x: 2870.0
+    y: 740.0
+  - x: 2870.0
+    y: 1300.0
+  - x: 2760.0
+    y: 1300.0
+  src_tag: V-3504
+  dst_tag: T-3508
+- cell_id: 5D5qHUWBTGfa0SRdJl68-86
+  src_cell: 5D5qHUWBTGfa0SRdJl68-48
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-85
+  media_label: null
+  waypoints: []
+  src_tag: T-3508
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-56
+  src_cell: 5D5qHUWBTGfa0SRdJl68-49
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-50
+  media_label: null
+  waypoints: []
+  src_tag: T-3501A
+  dst_tag: E-3513
+- cell_id: 5D5qHUWBTGfa0SRdJl68-66
+  src_cell: 5D5qHUWBTGfa0SRdJl68-49
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-52
+  media_label: null
+  waypoints: []
+  src_tag: T-3501A
+  dst_tag: E-3512
+- cell_id: 5D5qHUWBTGfa0SRdJl68-71
+  src_cell: 5D5qHUWBTGfa0SRdJl68-49
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-43
+  media_label: 甲醇水溶液
+  waypoints:
+  - x: 3002.5
+    y: 1240.0
+  - x: 2710.0
+    y: 1240.0
+  src_tag: T-3501A
+  dst_tag: T-3509
+- cell_id: 5D5qHUWBTGfa0SRdJl68-57
+  src_cell: 5D5qHUWBTGfa0SRdJl68-50
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-51
+  media_label: null
+  waypoints: []
+  src_tag: E-3513
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-62
+  src_cell: 5D5qHUWBTGfa0SRdJl68-52
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-53
+  media_label: null
+  waypoints: []
+  src_tag: E-3512
+  dst_tag: null
+- cell_id: 5D5qHUWBTGfa0SRdJl68-63
+  src_cell: 5D5qHUWBTGfa0SRdJl68-53
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-54
+  media_label: null
+  waypoints: []
+  src_tag: null
+  dst_tag: V-402
+- cell_id: 5D5qHUWBTGfa0SRdJl68-59
+  src_cell: null
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-50
+  media_label: 蒸汽
+  waypoints: []
+  src_tag: null
+  dst_tag: E-3513
+- cell_id: 5D5qHUWBTGfa0SRdJl68-69
+  src_cell: 5D5qHUWBTGfa0SRdJl68-49
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-49
+  media_label: 萃取水
+  waypoints:
+  - x: 2980.0
+    y: 1200.0
+  - x: 2930.0
+    y: 1200.0
+  - x: 2930.0
+    y: 930.0
+  - x: 3002.52
+    y: 930.0
+  src_tag: T-3501A
+  dst_tag: T-3501A
+- cell_id: 5D5qHUWBTGfa0SRdJl68-79
+  src_cell: 5D5qHUWBTGfa0SRdJl68-42
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-41
+  media_label: 甲醇水溶液
+  waypoints:
+  - x: 2750.0
+    y: 840.0
+  - x: 2750.0
+    y: 724.7
+  src_tag: E-3510
+  dst_tag: T-3502
+- cell_id: 5D5qHUWBTGfa0SRdJl68-99
+  src_cell: 5D5qHUWBTGfa0SRdJl68-96
+  dst_cell: 5D5qHUWBTGfa0SRdJl68-21
+  media_label: 反应混合物
+  waypoints: []
+  src_tag: null
+  dst_tag: V-3502

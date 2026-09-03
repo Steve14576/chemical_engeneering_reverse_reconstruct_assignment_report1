@@ -1,0 +1,296 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="y9IgLsXqPtU_XApx8txp">
+    <mxGraphModel dx="5405" dy="3645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-302&lt;div&gt;解吸塔冷凝器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-301&lt;div&gt;中间换热器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-302&lt;div&gt;解吸塔&lt;/div&gt;" vertex="1">
+          <mxGeometry height="550" width="120" x="240" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FV301" vertex="1">
+          <mxGeometry height="60" width="80" x="370" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="C4原料混合罐" vertex="1">
+          <mxGeometry height="150" width="120" x="490" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-301&lt;div&gt;解吸塔回流罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="120" x="490" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-303&lt;div&gt;解吸塔釜再沸器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="490" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-3506&lt;div&gt;C4原料罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-3501&lt;div&gt;甲醇原料罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3511&lt;div&gt;C4原料泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3501&lt;div&gt;甲醇进料泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="960" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3503&lt;div&gt;反应塔底循环泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1150" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3502&lt;div&gt;反应塔底循环泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1150" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3501&lt;div&gt;反应进料加热釜&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="70" x="1600" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3503&lt;div&gt;二段冷凝器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="70" x="1500" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3502&lt;div&gt;一段反应器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="70" x="1590" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-97" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="R-3501B&lt;div&gt;二段醚化反应器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="560" width="80" x="1700" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-98" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="R-3501A&lt;div&gt;一段醚化反应器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="580" width="80" x="1815" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-95" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-3502&lt;div&gt;醚后C4罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1930" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3508&lt;div&gt;MTBE产品冷却器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1930" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3505&lt;div&gt;催化蒸馏塔进料MTBE产品换热器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1930" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-94" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3505&lt;div&gt;催化塔下塔进料器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="1930" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-101" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="断了？" vertex="1">
+          <mxGeometry height="60" width="120" x="1960" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-93" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3501B&lt;div&gt;催化蒸馏塔下塔&lt;/div&gt;" vertex="1">
+          <mxGeometry height="370" width="60" x="2120" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3506&lt;div&gt;催化蒸馏塔重沸器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="2080" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-88" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-91" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3501A&lt;div&gt;催化蒸馏塔上塔&lt;/div&gt;" vertex="1">
+          <mxGeometry height="470" width="60" x="2221" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-90" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3509&lt;div&gt;萃取塔进料冷却器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="2326" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-87" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3512&lt;div&gt;MTBE出料泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2341" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="某黑盒管线" vertex="1">
+          <mxGeometry height="60" width="120" x="2440" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-89" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-92" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="P-3505&lt;div&gt;催化塔上塔进料泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2350" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3507&lt;div&gt;催化蒸馏塔冷却器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="360" x="2350" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-55" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-82" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3502&lt;div&gt;甲醇萃取塔&lt;/div&gt;" vertex="1">
+          <mxGeometry height="490" width="70" x="2510" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3510&lt;div&gt;萃取水冷凝器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2610" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-75" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3509&lt;div&gt;精馏塔采出泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2620" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-76" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-77" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="甲醇水溶液" vertex="1">
+          <mxGeometry relative="1" x="-0.0014" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-83" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2852.6" y="1040" />
+              <mxPoint x="2970" y="1040" />
+              <mxPoint x="2970" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-3503&lt;div&gt;催化蒸馏回流塔&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="70" x="2790" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-84" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2870" y="740" />
+              <mxPoint x="2870" y="1300" />
+              <mxPoint x="2760" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-3504&lt;div&gt;C4残液罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2830" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-86" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3508&lt;div&gt;C4出料罐泵&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="2730" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-56" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="5D5qHUWBTGfa0SRdJl68-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3140" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-66" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-71" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3002.5" y="1240" />
+              <mxPoint x="2710" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-72" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-71" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="甲醇水溶液" vertex="1">
+          <mxGeometry relative="1" x="-0.2379" y="-2" as="geometry">
+            <mxPoint x="-71" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="T-3501A&lt;div&gt;甲醇回收塔&lt;/div&gt;&lt;div&gt;主要介质：C4，甲醇，萃取水&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="90" x="2980" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-57" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3513&lt;div&gt;甲醇回收塔重沸器&lt;/div&gt;&lt;div&gt;管程：蒸汽，壳程：萃取水&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="3050" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="放空？" vertex="1">
+          <mxGeometry height="60" width="120" x="3050" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-62" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5D5qHUWBTGfa0SRdJl68-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="E-3512&lt;div&gt;甲醇回收塔冷凝器&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="3080" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-63" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="甲醇回收塔回流罐&lt;div&gt;主要介质：甲醇，C4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="3230" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="V-402&lt;div&gt;混合罐&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="3350" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-59" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-50" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3300" y="1260" as="sourcePoint" />
+            <mxPoint x="3340" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-60" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="蒸汽" vertex="1">
+          <mxGeometry relative="1" x="-0.1846" y="-5" as="geometry">
+            <mxPoint x="-17" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-69" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2980" y="1200" />
+              <mxPoint x="2930" y="1200" />
+              <mxPoint x="2930" y="930" />
+              <mxPoint x="3002.52" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-70" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-69" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="萃取水" vertex="1">
+          <mxGeometry relative="1" x="-0.1824" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-79" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.007;entryY=0.132;entryDx=0;entryDy=0;entryPerimeter=0;" target="5D5qHUWBTGfa0SRdJl68-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2750" y="840" />
+              <mxPoint x="2750" y="724.7" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-80" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-79" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="甲醇水溶液" vertex="1">
+          <mxGeometry relative="1" x="0.1174" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="断了？" vertex="1">
+          <mxGeometry height="60" width="120" x="2730" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-99" edge="1" parent="1" source="5D5qHUWBTGfa0SRdJl68-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="5D5qHUWBTGfa0SRdJl68-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-100" connectable="0" parent="5D5qHUWBTGfa0SRdJl68-99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="反应混合物" vertex="1">
+          <mxGeometry relative="1" x="-0.8866" y="6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5D5qHUWBTGfa0SRdJl68-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="某管道汇合" vertex="1">
+          <mxGeometry height="60" width="120" x="1760" y="1310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

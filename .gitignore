@@ -1,0 +1,9 @@
+# ---- Python 虚拟环境（uv 本地 .venv，不入版本库）----
+.venv/
+
+# ---- 本地工具二进制：Tectonic（约 49MB，不入版本库；需要时本地放置到该路径即可）----
+work/paper_Tectonic/bin/tectonic.exe
+
+# ---- drawio 编辑器自动产生的临时/备份文件 ----
+.$*.drawio.bkp
+.$*.drawio.dtmp

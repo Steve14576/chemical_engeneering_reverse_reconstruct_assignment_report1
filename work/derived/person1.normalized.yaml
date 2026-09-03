@@ -1,0 +1,71 @@
+# person1 手绘照片的 L1 数字化（user 断言版）
+# 层级：L0=raw 冻结源 → L1=本文件(数字化+断言) → L2=对账合并 → L3=求解 → L4=报告图。
+# 断言政策（user 拍板 2026-09-03）：
+#   - 不做逐条置信度 / 不留活路；模糊处由 user 直接断言，断言责任在 user；
+#   - 本文件 = agent 目视转录 + user 断言接纳；transform: user_asserted_digitization；
+#   - 真正追不到的（端点不可见 / 涂鸦 / 未画）仍留在 unknowns，**不伪造**；
+#   - 未标注闭合形状仍不立为节点（"未标注"是事实，不是置信度问题）。
+source:
+  id: person1
+  level: L1
+  raw_file: work/raw_material/imperfectmapping_person1.jpg
+  raw_sha256: dca46e3161f80f5ab3698ce2e06dfdbe04ea3ac505da1ac81d50461bd9c54dc5
+  transform: user_asserted_digitization
+  assertion_owner: user
+  hedging: none_by_decision
+  cross_validation_caveat: 含 user 断言；person1-vs-person2 交叉验证时，断言项视为 user 判断而非 person1 独立观测
+  geom_note: geom_approx 为目视估计像素框（约 2300x1300 坐标系），仅表相对位置，不精确
+
+nodes:
+  - {tag: V-302, tag_status: ok, shape_class: vessel,    name_zh: null, geom_approx: {x: 330, y: 630, w: 150, h: 240}}
+  - {tag: T-301, tag_status: ok, shape_class: column,    name_zh: null, geom_approx: {x: 620, y: 500, w: 130, h: 230}}
+  - {tag: E-301, tag_status: ok, shape_class: exchanger, name_zh: null, geom_approx: {x: 830, y: 460, w: 110, h: 190}}
+  - {tag: E-302, tag_status: ok, shape_class: exchanger, name_zh: null, geom_approx: {x: 830, y: 310, w: 250, h: 90}}
+  - {tag: T-302, tag_status: ok, shape_class: column,    name_zh: null, geom_approx: {x: 1010, y: 450, w: 170, h: 230}}
+  - {tag: V-301, tag_status: ok, shape_class: vessel,    name_zh: null, geom_approx: {x: 1200, y: 190, w: 130, h: 180}}
+  - {tag: E-303, tag_status: ok, shape_class: exchanger, name_zh: null, geom_approx: {x: 1210, y: 520, w: 140, h: 50}}
+  - {tag: null,  raw_head: "C⊗4", tag_status: ambiguous, shape_class: unknown, name_zh: null,
+     note: "读作 C + circled-cross + 4；断言为 C4 罐且内联一个泵/阀符号（二者不明）；对应 person2 未标号 C4原料混合罐",
+     geom_approx: {x: 1400, y: 450, w: 160, h: 250}}
+  - {tag: E-3501, tag_status: ok, shape_class: exchanger, name_zh: null, geom_approx: {x: 1680, y: 480, w: 130, h: 260}}
+  - {tag: R-3501A, tag_status: ok, shape_class: reactor,  name_zh: null, geom_approx: {x: 1860, y: 470, w: 130, h: 270}}
+  - {tag: R-3501B, tag_status: ok, shape_class: reactor,  name_zh: null, geom_approx: {x: 1880, y: 760, w: 110, h: 210}}
+  - {tag: E-3505, tag_status: ok, shape_class: exchanger, name_zh: null, geom_approx: {x: 2070, y: 530, w: 110, h: 50}}
+
+# 未标注的闭合形状：不立为节点，仅作候选（是否独立设备 / 是否某标签设备的本体，均不明）
+candidates_unlabeled:
+  - {id: U1, kind: tall_rect, geom_approx: {x: 540, y: 450, w: 140, h: 450}, note: T-301 左/背后的竖框；可能与 T-301 同本体}
+  - {id: U2, kind: tall_rect, geom_approx: {x: 830, y: 650, w: 120, h: 220}, note: E-301 下方竖框；可能与 E-301 同本体}
+  - {id: U4, kind: wide_rect, geom_approx: {x: 1100, y: 600, w: 200, h: 230}, note: T-302 右下 / E-303 下方的宽竖框}
+  - {id: U6, kind: trapezoid, geom_approx: {x: 1440, y: 830, w: 70, h: 110}, note: C4 区左下梯形，疑泵/阀，不明}
+  - {id: U7, kind: trapezoid, geom_approx: {x: 1550, y: 810, w: 90, h: 120}, note: C4 区右下梯形，疑泵/阀，不明}
+  - {id: U8, kind: small_box, geom_approx: {x: 1580, y: 690, w: 30, h: 50},  note: C4 右侧小框，疑阀/孔板，不明}
+  - {id: U9, kind: small_box, geom_approx: {x: 1420, y: 760, w: 40, h: 40},  note: C4 左下小框，疑阀/孔板，不明}
+
+# 断言的连线（user 断言版，不再标 confidence）
+edges:
+  - {id: p1e1,  a: V-302,  b: T-301,   note: V-302 底部回环向下-右-上接到 T-301 左侧/U1}
+  - {id: p1e2,  a: E-301,  b: E-302,   note: E-301 顶向上接到 E-302 左下}
+  - {id: p1e3,  a: E-302,  b: T-302,   note: E-302 下方的锯齿盘管横接 T-302 顶}
+  - {id: p1e4,  a: V-301,  b: E-302,   note: V-301 底经一个小锯齿(疑阀)接到盘管右端横线}
+  - {id: p1e5,  a: T-302,  b: U4,      note: T-302 底/右连到其右下宽竖框 U4}
+  - {id: p1e6,  a: E-303,  b: U4,      note: E-303 底向下连到 U4 顶}
+  - {id: p1e7,  a: C⊗4,    b: U8,      note: C4 区右侧经 U8 向下}
+  - {id: p1e8,  a: U8,     b: U7,      note: U8 向下接梯形 U7}
+  - {id: p1e9,  a: C⊗4,    b: U9,      note: C4 区左下经 U9 向下}
+  - {id: p1e10, a: U9,     b: U6,      note: U9 向下接梯形 U6}
+  - {id: p1e11, a: E-3501, b: R-3501A, note: E-3501 顶回环向右接 R-3501A 顶}
+  - {id: p1e12, a: R-3501A,b: R-3501B, note: R-3501A 底与 R-3501B 顶之间短竖线}
+
+# 真追不到的：保持 unknown，不伪造
+dangles_and_unknowns:
+  - {id: d1, at: E-3505, note: E-3505 左侧一条短线，另一端不可见/未画}
+  - {id: d2, at: T-301,  note: T-301 正下方一团涂鸦/划掉的线，意图未知}
+  - {id: d3, at: E-302,  note: E-302 左上一条线伸向 (~770,360) 后端点不明}
+  - {id: d4, at: C⊗4,    note: C4 顶部一条回环到其右侧的线，是否同一根管/是否闭合不明}
+  - {id: d5, at: V-301,  note: V-301 底部小锯齿符号是阀还是断口不明}
+
+illegible_or_untraceable:
+  - 3500 系其余设备（T-3501A/B、T-3502、各泵、V-350x、E-3506~E-3513 等）在 person1 图中**完全没画**
+  - 300 系各设备之间的多数连线追不实（纸皱 + 线叠 + 折痕遮挡）
+  - 所有未标注矩形/梯形的真实身份
