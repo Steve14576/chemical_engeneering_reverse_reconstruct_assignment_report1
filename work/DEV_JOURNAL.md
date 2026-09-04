@@ -103,3 +103,7 @@ user 换了一个 agent，其 v2 把 flow_main.svg 改成全线框（无化工�
 ### J25 图2 改 PNG 的根因 + 图7 说人话版
 根因确认：user 的 md 编辑器对 pyflowsheet 产出的 <path>/<circle> 设备符号渲染不良（显示成框框），而 PNG 光栅能正确显示图标 → 图2 内联改 PNG（user 手改，尊重），SVG 原件保留；纯 rect+text 的图（图1/图6/图7/struct×3）编辑器渲染正常，继续 SVG。新增图7 work_overview_plain.svg（make_work_overview_plain.py）：与图6 同结构（四泳道+三侧栏）但全日常说法（"每台设备必须有进有出"代替"度数闭合公理"、"承认有没画出来的线"代替"+漏画变量"、侧栏=补线/说话/查账三条规矩）；原版不删；手抄时图6/图7 二选一。PNG 全量重转（含图7）放后台跑（cairo 慢路，分钟级），仅作附件备份。
 → 指向：D15、report.md 图2/图7、make_png_exports.py。
+
+### J26 report2 修缮终稿：引用重排/注释统一/删冗图/去 AI 腔/§0 收口语
+user 五点要求逐条落实于 report2.md：① 引用按首次出现顺序重排（映射 11→1,1→2,7→3,4-6 不变,9→7,2→8,3→9,8→10,10→11；逗号列表 [1,3]/[1,8] 正则漏配需手动补 [2,9]/[2,10]；参考文献列表二次按新号排序——第一次按旧键排错，已修）；② 注释统一 blockquote（§0 归属说明、图件与手抄指引）；③ 删不用图：术语版总览 work_overview.svg/png 删除，report2 图6 换说人话版 plain.svg；report.md 标 superseded 保留作历史底稿；struct_*.png 与 flow_main.png 保留作附件/打印备份（report2 不嵌）；④ 去"不是…而是…"句式六处；⑤ §0 由口语改书面（"拼不出一个说得通的流程"→"无法闭合成自洽流程"等）。校验：CJK 6821、嵌入 6 张、正文引注 1,2,3,4-6,7,8… 与列表 1–11 顺序一致。
+→ 指向：D16、report2.md、personal/trash 无新增（删除件为 figures/work_overview.svg|png）。
