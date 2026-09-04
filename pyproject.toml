@@ -11,5 +11,8 @@ dependencies = [
     "pathfinding==1.0.1",
     "pyflowsheet==0.2.2",
     "pyyaml>=6.0.3",
+    "reportlab>=5.0.1",
+    "rlpycairo>=0.4.0",
     "scipy>=1.18.1",
+    "svglib>=2.2.0",
 ]

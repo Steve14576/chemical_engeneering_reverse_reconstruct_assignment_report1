@@ -91,3 +91,7 @@ user 问"要不要加一张 MCM 那样放在 our work 的图说明都干了什�
 ### J21 图6 渲染失败：裸 & 使 SVG 不 well-formed
 user 报"ourwork 图渲染失败"。诊断：xml.etree 解析六张 SVG，仅 work_overview.svg 在 col 7588 报错——侧栏标签"背书分档 & 局限"的裸 `&` 未转义（XML 要求 &amp;）。修法：两个出图脚本加 esc()（& < > 转义）应用于所有文本；标签改"背书分档与局限"。重生成后六张全 OK。教训：手写 SVG 时任何文本进 XML 前必须转义；以后出图脚本自带校验步（parse 一遍再交付）。
 → 指向：D15、make_work_overview.py / make_block_and_structures.py。
+
+### J22→J23 PNG 内联是个假问题：回退 SVG，PNG 降为附件备份
+user 要求"全导 PNG、内联换 PNG"。实施中连踩两坑：reportlab 5.x renderPM 需 rlPyCairo（补装 pycairo 后可用）；cairo 后端无中文字体→豆腐块→注入 font-family 后又触发逐文本字体扫描，单张小图 37s、全量分钟级。此时 user 点破关键事实：**md 编辑器渲染 SVG 时中文一直正常，坏的只有图6 的裸 &**。结论：字体问题只存在于 cairo/PNG 路径，SVG 路径无此问题 → PNG 内联是为不存在的问题开坑。回退：六张内联全部回 SVG；make_png_exports.py 保留为附件包/打印的可选工具（后台跑完的 PNG 作副产品），不进正文、不进关键路径。教训：先确认"谁在看、用什么渲染"，再选格式；别在渲染链上叠依赖。
+→ 指向：D15、report.md 图1–6、make_png_exports.py。
