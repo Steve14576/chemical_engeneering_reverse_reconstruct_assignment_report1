@@ -1,0 +1,59 @@
+# P4 先验决策数据（user 拍板 2026-09-04；本文件为 L3/L4 输入）
+# 声明：以下全部为 prior-driven（凭教科书级 MTBE 骨架），非现场观测；
+#       图与报告中凡用到本文件条目处必须标 prior-driven 并附局限说明。
+# 拍板原文见 work/PROJECT_LEDGER.md §6（已裁决）。
+meta:
+  level: P4
+  owner: user
+  date: 2026-09-04
+  basis: 教科书级 MTBE 工艺骨架（醚化→催化蒸馏→甲醇萃取→甲醇回收）
+  labeling: prior-driven
+  limitation: 非现场观测；与观测冲突处以观测为准并进"测绘缺陷分析"
+
+decisions:
+  A1:
+    kind: edge_resolve
+    cluster: "歧义簇① E-3506 接上塔/下塔 24:24"
+    adopt: [E-3506, T-3501B]
+    reject: [[E-3506, "p2::5D5qHUWBTGfa0SRdJl68-35"]]   # 催化蒸馏塔上塔成员
+    reason: 催化蒸馏塔重沸器服务于塔釜，标准流程在下塔底
+  A2:
+    kind: edge_resolve
+    cluster: "歧义簇② P-3511 出口 4 选"
+    adopt: [P-3511, E-3501]
+    reject: [[P-3511, V-3504], [P-3511, T-3508], [P-3511, V-3502]]
+    reason: C4 原料泵送料进反应器进料线（经预热 E-3501）
+  A3:
+    kind: edge_resolve
+    cluster: "歧义簇③ P-3501 出口 4 选"
+    adopt: [P-3501, E-3501]
+    reject: [[P-3501, E-3512], [P-3501, E-3513], [P-3501, T-3502]]
+    reason: 甲醇泵送甲醇与 C4 汇合、一起进反应器
+  A4:
+    kind: dangle_policy
+    items:
+      - {at: E-302, policy: unknown_no_link, note: 悬空线留"未知"记号，不连}
+      - {at: E-3513, policy: utility_steam, note: "蒸汽"线=外部公用工程进 E-3513 管程，不作工艺物料边}
+  A5:
+    kind: closure_policy
+    policy: minimal_closure_only
+    method: >
+      补边只取"物料必须有去处"逼出的最小集合；在标准骨架候选内由求解器枚举最小补集
+      （与歧义枚举同法），再交 W2 Tier 0 物料衡算检验；衡算不通回改。
+      可加可不加的旁路/额外回流一律不补；禁止"最乐观"补全。
+    labeling: 每条补边标 prior-driven
+  A6:
+    kind: rename
+    items:
+      - {from: "甲醇回收塔 (冒用 T-3501A)", to: TMP-MEOHCOL}
+      - {from: "P-3505 (出现两次)", to: "P-3505A=催化塔上塔进料泵, P-3505B=催化塔下塔进料器（两台）"}
+    scope: 只改标签，不改连线
+
+whitelist_low_level_errors:
+  confirmed: ["E302→E-302", "醚后C4键→醚后C4罐", "某管道会和→某管道汇合", "MBTE→MTBE ×3"]
+  user_additional: 无（2026-09-04 未补充）
+
+stray_duplicate:
+  file: personal/trash/terriblemapping_person2.drawio
+  action: moved_to_trash（2026-09-04，user 同意"重名了就扔进trash"）
+  note: 与冻结版 imperfectmapping_person2.drawio 内容等价（仅视图偏移不同），非独立源

@@ -1,0 +1,121 @@
+meta:
+  level: L3/P4
+  solver: scipy.optimize.milp (HiGHS)
+  policy: A5 minimal_closure_only：min Σc，枚举最小解；禁最乐观
+  fixed_edges:
+    observed: 39
+    p2_grammar_stable:
+    - - P-3511
+      - V-3506
+    - - P-3501
+      - V-3501
+    - - E-3505
+      - T-3512
+    A1_A3:
+    - - E-3506
+      - T-3501B
+    - - P-3511
+      - E-3501
+    - - P-3501
+      - E-3501
+  deficient_allowed_no_closure:
+  - E-3502
+  - E-3503
+  - FV301
+  backing: work/derived/prior_backing.yaml (D11)
+candidates:
+- id: c1
+  edge:
+  - E-3508
+  - T-3512
+  note: MTBE 产品冷却器接产品出料泵（档2-弱）
+- id: c2
+  edge:
+  - P-3502
+  - T-3501B
+  note: 反应塔底循环泵#1 抽自下塔（档1+命名）
+- id: c3
+  edge:
+  - P-3502
+  - E-3506
+  note: 反应塔底循环泵#1 送再沸器（档1+命名）
+- id: c4
+  edge:
+  - P-3503
+  - T-3501B
+  note: 反应塔底循环泵#2 抽自下塔（档1+命名）
+- id: c5
+  edge:
+  - P-3503
+  - E-3506
+  note: 反应塔底循环泵#2 送再沸器（档1+命名）
+- id: c6
+  edge:
+  - V-3504
+  - T-3508
+  note: C4 残液罐接 C4 出料罐泵（档1 命名语法）
+- id: c7
+  edge:
+  - T-3508
+  - V-3502
+  note: C4 出料罐泵送回醚后 C4 罐/外输（档2-弱）
+- id: c8
+  edge:
+  - p2::5D5qHUWBTGfa0SRdJl68-5
+  - P-3511
+  note: C4 原料混合罐接 C4 原料泵（档1 命名/档2-弱）
+- id: c9
+  edge:
+  - p2::5D5qHUWBTGfa0SRdJl68-5
+  - V-3506
+  note: C4 原料罐接 C4 原料混合罐（档2-弱）
+minimal_sets:
+- - c1
+  - c2
+  - c3
+  - c4
+  - c5
+  - c8
+  - c9
+- - c1
+  - c2
+  - c3
+  - c4
+  - c5
+  - c7
+  - c8
+  - c9
+- - c1
+  - c2
+  - c3
+  - c4
+  - c5
+  - c6
+  - c8
+  - c9
+- - c1
+  - c2
+  - c3
+  - c4
+  - c5
+  - c6
+  - c7
+  - c8
+  - c9
+stable_candidates:
+- c1
+- c2
+- c3
+- c4
+- c5
+- c8
+- c9
+optional_not_added:
+- edge:
+  - V-3503
+  - p2::5D5qHUWBTGfa0SRdJl68-35
+  note: 催化蒸馏回流罐→上塔回流：度数已闭合，按 A5 最小原则不补，图上可画并标 prior
+- edge:
+  - T-3501B
+  - E-3505
+  note: MTBE 自下塔去产品换热器：度数已闭合，同上

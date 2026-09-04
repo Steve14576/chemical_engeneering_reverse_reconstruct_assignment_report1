@@ -1,0 +1,37 @@
+# 先验背书档（D11）：每条 prior 的出处强度（Q3 四档）
+# 规则：档0 不需背书；档1 单元惯例=化工原理精馏章；档2 工艺序列=MTBE 文献；档3 设备内件=设备章/专利/论文图。
+# 未命中者标 status: 未直接命中 → 降级为"推断"并进报告局限清单。
+meta:
+  level: P4-backing
+  date: 2026-09-04
+  search_note: WebSearch 两轮（MTBE 工艺序列 / 催化蒸馏塔内件）；仅记录命中摘要与 URL，未全文核实处标"摘要级"。
+
+backing:
+  tier2_sequence_front:
+    status: 命中（摘要级）
+    claim: MTBE = 混合C4(异丁烯)+甲醇 → 醚化反应器(预反应转化率约90–95%) → 催化蒸馏塔；甲醇可注入催化蒸馏塔反应段
+    sources:
+      - {url: "https://zhuanlan.zhihu.com/p/183961987", title: "MTBE的生产工艺技术及技术路线选择（知乎专栏）", note: 化工型=混相反应段预反应+催化蒸馏；膨胀床/固定床路线并存}
+      - {url: "https://chem.jgvogel.cn/c1406837.shtml", title: "关于MTBE装置检修换剂处理的工艺优化（流程工业）", note: 混合碳四异丁烯+甲醇、酸性催化剂醚化}
+      - {url: "https://patents.google.com/patent/CN113952904B/zh", title: "CN113952904B MTBE生产系统改造及开车", note: 醚后碳四输送泵等单元存在性旁证}
+      - {url: "https://cn.acad-pub.com/index.php/xdkjyj/article/viewFile/22632/19544", title: "MTBE生产过程中催化剂性能优化技术研究(PDF)", note: 甲醇与C4混合进反应器 / 甲醇注入催化蒸馏塔反应段}
+  tier2_sequence_back:
+    status: 未直接命中
+    claim: 醚后C4 经甲醇萃取塔(T-3502) + 甲醇回收塔(TMP-MEOHCOL) 回收甲醇
+    handling: 降级为"档2-弱·行业通用配置·推断"；进报告局限清单；现场观测中两塔及其中文名存在（person2 name_zh），故塔的存在有观测背书、序列归属为推断
+  tier3_catalytic_distillation_internals:
+    status: 命中（摘要级）
+    claim: 催化蒸馏塔 = 上部精馏段 + 中部反应段(催化剂捆包/模块) + 下部提馏段；再沸器在塔底
+    sources:
+      - {url: "https://patents.google.com/patent/CN201037131Y/zh", title: "CN201037131Y 改进型MTBE生产设备", note: 催化蒸馏塔内件换捆包催化剂}
+      - {url: "https://patents.google.com/patent/CN102824752A/zh", title: "CN102824752A 催化蒸馏塔", note: 塔体+催化反应段+分离段相间组合}
+      - {url: "http://www.ddlihe.com/m/news/702.html", title: "丹东立和 催化蒸馏捆包", note: 上精馏/中反应/下提馏三段，催化剂装填中部反应段}
+      - {url: "https://baike.baidu.com/item/%E5%8F%8D%E5%BA%94%E7%B2%BE%E9%A6%8F%E5%A1%94/53327358", title: "百度百科 反应精馏塔", note: 反应精馏塔拓扑变体综述}
+  tier3_other_internals:
+    status: 待收（user 速通手册优先）
+    claim: 固定床/膨胀床醚化反应器、管壳换热器、离心泵内件
+    handling: 先翻 personal/化工原理速通手册（泵/换热讲已有图）；反应器类型引用 tier2_sequence_front 的路线描述；仍无则简化示意+声明
+  tier1_unit_conventions:
+    status: 不需外部背书（定义/惯例级）
+    claim: 塔顶→冷凝器→回流罐→回流；塔底→再沸器→回塔；泵一进一出；命名语法(泵接同物料罐)
+    sources: [{url: null, title: "化工原理精馏章（任一教材）", note: 用户速通手册精馏讲亦可引用}]

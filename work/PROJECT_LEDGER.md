@@ -24,7 +24,7 @@
 ### §2.2 冻结源补充说明
 
 - `terriblemapping_person1.drawio` = user 于 2026-09-04 **重画的 person1**（drawio）。user 声明全图无向；解析以 `--all-undirected` 源级覆盖（个别边漏写 endArrow=none），覆盖行为已登记（D3）。命名沿用旧前缀 terriblemapping，系 user 选择，不改名。
-- `work/raw_material/terriblemapping_person2.drawio` = 与冻结版 `imperfectmapping_person2.drawio` **内容等价**的重复存档（仅 mxGraphModel dx/dy 视图偏移不同：1563/1089 vs 1544/1041）。**非独立源**，不参与任何下游；移 personal/trash 待 user 同意（§6）。
+- `terriblemapping_person2.drawio`（原 work/raw_material/）= 与冻结版 `imperfectmapping_person2.drawio` **内容等价**的重复存档（仅 mxGraphModel dx/dy 视图偏移不同：1563/1089 vs 1544/1041）。**非独立源**；2026-09-04 经 user 同意移至 `personal/trash/terriblemapping_person2.drawio`。
 - `imperfectmapping_person1.jpg` 仍为 person1 的现场原始记录；`terriblemapping_person1.drawio` 是其重画数字化，二者关系见 D2/D3。
 
 ### §2.3 standing rule
@@ -64,6 +64,9 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 - **W1 冻结于 P2**：不再加深；歧义簇与可疑附着交 P4 强先验裁决（§6）。
 - P4 先验裁决清单 A1–A6 提出，**待 user 拍板**（§6）。
 - 台账合并：SOURCE_PROVENANCE + PROCESS_LEDGER → 本文件（§9）。
+- **P4 拍板（user）**：A1–A3 行；A4/A6 按 agent 理解；A5 = 最小必需补集且"补也试出来"（枚举最小补集 + W2 衡算检验，禁止最乐观补全）；白名单未补充（维持 6 处错别字）；stray 重复文件移 trash。裁决数据落 D10。
+- **先验背书检索（2026-09-04，WebSearch 两轮）**：档2 前半（醚化+催化蒸馏）与档3 催化蒸馏内件命中（摘要级 URL 见 D11）；**档2 后半（甲醇萃取+甲醇回收序列）未直接命中 → 降级"档2-弱·行业通用配置·推断"，已告知 user**；档3 其余内件待收（速通手册优先）。
+- **P4 最小补集枚举完成（D12）**：唯一最小补集 7 条；feed drum（C4 原料混合罐）按档1 惯例度数=2 消除 c8/c9 二选一分歧（非乐观补全）。
 
 ## §5 求解梯与结果解读
 
@@ -83,18 +86,16 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 
 ## §6 待办 / 未裁决
 
-- **P4 先验裁决清单（待 user 拍板）**：
-  - A1 E-3506（催化蒸馏塔重沸器）接**下塔**。
-  - A2 P-3511（C4 原料泵）出口→醚化进料方向（经预热 E-3501）。
-  - A3 P-3501（甲醇进料泵）出口→醚化进料混合点（与 C4 汇合）。
-  - A4 两可疑附着作废：E-302 悬空线保持 unknown；蒸汽线记公用工程进 E-3513 管程，不作工艺边。
-  - A5 标准 MTBE 序列补边（标 prior-driven）。
-  - A6 重号裁决倾向：甲醇回收塔→TMP-MEOHCOL；P-3505 倾向 H_distinct（两台）。
-  - 依据=教科书级 MTBE 骨架；与观测冲突处进"测绘缺陷分析"。
-- stray person2 移 trash：待同意。
-- L2"确认的低级错误"白名单：现仅 6 处错别字；待 user 补充。
+- **P4 先验裁决（user 拍板 2026-09-04；数据见 D10 `work/derived/prior_decisions_P4.yaml`）**：
+  - A1 采纳 E-3506—T-3501B（下塔）；A2 采纳 P-3511—E-3501；A3 采纳 P-3501—E-3501（user：行）。
+  - A4 按 agent 理解：E-302 悬空线留 unknown 不连；蒸汽线 = 公用工程进 E-3513 管程、不作工艺边。
+  - A5 **最小必需补集**：只补"物料必须有去处"逼出的边；在标准骨架候选内枚举最小补集（与歧义枚举同法），交 W2 Tier 0 衡算检验；可加可不加一律不补；禁止最乐观补全；每条标 prior-driven。
+  - A6 按 agent 理解：甲醇回收塔→TMP-MEOHCOL；P-3505→P-3505A（上塔进料泵）/P-3505B（下塔进料器）两台；只改标签不改连线。
+  - 依据=教科书级 MTBE 骨架；与观测冲突处以观测为准并进"测绘缺陷分析"。
+- ~~stray person2 移 trash~~：已完成（2026-09-04，移至 `personal/trash/terriblemapping_person2.drawio`）。
+- L2 白名单：**已关闭**——user 未补充，维持 6 处错别字。
 - Aspen license 有无：未知（决定 W2 Tier 2 存不存在）。
-- ②.3 三张设备结构图的教材参考：未收。
+- ②.3 三张设备结构图的教材参考：未收。含义 = 每张结构图需可引用出处（书/文献图或描述）；先验背书分四档与无背书处理见 `personal/QnAnExperience.md` Q3。
 - person1 photo-L1 与 redraw 的分歧（300 系中段邻接互斥、redraw 丢弃 U1/U2/U4）：不裁决，进缺陷分析。
 
 ## §7 衍生物与产物登记
@@ -110,6 +111,9 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 | D7 | work/derived/solver_result_P2.yaml | L3 | `solve_topology_p2.py`（MILP via scipy/HiGHS） | 48 解；观测边 drop 全 0；稳定语法推断 3 条；歧义簇 3 个；W1 于此冻结 |
 | D8 | work/derived/normalize_drawio.py、merge_observations.py、solve_topology.py、solve_topology_p2.py | 工具 | 可复跑脚本 | normalize_drawio 取代 normalize_person2.py（后者 SUPERSEDED 暂留）；ortools 弃用见 §4 |
 | D9 | 本文件 work/PROJECT_LEDGER.md | 台账 | 合并自 SOURCE_PROVENANCE + PROCESS_LEDGER | 唯一台账；旧编号映射见 §9 |
+| D10 | work/derived/prior_decisions_P4.yaml | P4 输入 | user 拍板转录（agent 记录，2026-09-04） | A1–A6 裁决数据 + 白名单（已关闭）+ stray 处置；全条目 prior-driven 声明与局限 |
+| D11 | work/derived/prior_backing.yaml | P4 背书 | WebSearch 两轮（2026-09-04） | 档2 前半命中 4 URL（摘要级）；档2 后半未直接命中→降级推断；档3 催化蒸馏内件命中 4 URL；档3 其余待收；档1 不需外部背书 |
+| D12 | work/derived/solver_result_P4.yaml + solve_closure_P4.py | L3/P4 | MILP 最小补集枚举（HiGHS） | 唯一最小补集 7 条：c1 E-3508—T-3512；c2/c3 P-3502—T-3501B/E-3506；c4/c5 P-3503—T-3501B/E-3506；c8 混合罐—P-3511；c9 V-3506—混合罐。不闭合白名单 E-3502/E-3503/FV301 声明为测绘缺陷 |
 
 ## §8 报告取材映射
 
@@ -125,3 +129,4 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 - 旧 provenance 衍生物条目 1–10 → 本文件 D1–D9（case 归一并入 §2.4；旧条目 10"PROCESS_LEDGER 文档"即本文件 D9）。
 - 旧 ledger §0–§7 → 本文件 §1–§8。
 - 知识卡片 `personal/QnAnExperience.md` Q2 的出处已改指本文件章节；Q2 不承担项目台账职能。
+- **废弃产物警示**：`personal/trash/dc/report.md` 与 `field_reconciliation.md` 为早期废弃草稿，其中的标签合并结论（如"T-302 与 T-3501A 同塔""E-3509 与 E-350S 同冷却器"）**已废弃、不作数**，不得回流进本报告；当前口径以 §5/§6/D10 为准。
