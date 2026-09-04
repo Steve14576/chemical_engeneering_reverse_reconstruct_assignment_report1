@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """L3 拓扑求解 v2（纯 Python 全枚举；CP-SAT 已弃）。
 
-弃用 CP-SAT 的原因（登记于 SOURCE_PROVENANCE）：本环境 ortools wheel 的 CpSolver.Solve
+弃用 CP-SAT 的原因（登记于 work/PROJECT_LEDGER.md §4/§7）：本环境 ortools wheel 的 CpSolver.Solve
 对最小模型即触发 0xC0000005 访问违例，与建模无关，故改用纯 Python 全枚举。
 内层搜索空间小（悬空端候选 × {none}），全枚举可行且比 k-best 更强：频率为精确值、无采样。
 

@@ -13,7 +13,7 @@ P2 相对 P0h 的新增（让歧义显形）：
   - 重号合并仍外层穷举（2 组 → 4 combo），每 combo 用整数割枚举 ≤K 个最优解；
   - 频率跨全部枚举解统计：drop_freq>0 的观测边 = "可能画错/假管"候选；
     use_freq 高的语法边 = 推断的 hidden 边；drop_freq=0 的观测边 = P2 稳定。
-求解器：scipy.optimize.milp (HiGHS)。ortools 因 wheel 段错误已弃（见 SOURCE_PROVENANCE 第 8 条）。
+求解器：scipy.optimize.milp (HiGHS)。ortools 因 wheel 段错误已弃（见 work/PROJECT_LEDGER.md §7 D5–D7）。
 """
 from __future__ import annotations
 

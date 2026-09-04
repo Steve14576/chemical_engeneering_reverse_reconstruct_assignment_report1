@@ -13,7 +13,7 @@
 用法：
   uv run python work/derived/normalize_drawio.py \
       --raw <drawio 路径> --sha <小写sha256> --out <输出yaml> --source-id <id>
-衍生物与处理方式登记见 work/raw_material/SOURCE_PROVENANCE.md。
+衍生物与处理方式登记见 work/PROJECT_LEDGER.md §7。
 """
 from __future__ import annotations
 
@@ -80,7 +80,7 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--source-id", required=True)
     ap.add_argument("--all-undirected", action="store_true",
-                    help="源级声明：全图无向，覆盖逐边 endArrow 判定（用于 user 声明无向的重画；登记于 SOURCE_PROVENANCE）")
+                    help="源级声明：全图无向，覆盖逐边 endArrow 判定（用于 user 声明无向的重画；登记于 work/PROJECT_LEDGER.md）")
     args = ap.parse_args()
 
     raw = ROOT / args.raw

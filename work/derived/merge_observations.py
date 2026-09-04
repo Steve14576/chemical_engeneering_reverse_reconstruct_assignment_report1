@@ -7,7 +7,7 @@
     **缺席不等于冲突**（person2 的 300 系 degree=0 是没画，不是反对）；
   - 重名三假设（H_same/H_segment/H_distinct）、functional 变量、candidate_align 只**登记为假设**，
     交由 L3 枚举，本脚本不预选、不修改任何 L1；
-  - person1 photo 断言版不参与合并（已被 redraw 取代为 person1 的声音），其分歧见 SOURCE_PROVENANCE 第 6 条。
+  - person1 photo 断言版不参与合并（已被 redraw 取代为 person1 的声音），其分歧见 work/PROJECT_LEDGER.md §7（D2/D3）与 §6。
 """
 from __future__ import annotations
 

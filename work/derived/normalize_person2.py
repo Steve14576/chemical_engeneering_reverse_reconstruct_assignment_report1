@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """[SUPERSEDED 2026-09-04] 本脚本已由 normalize_drawio.py（参数化通用版）取代，暂留不删仅作历史参照。
-请勿再运行本脚本生成 person2.normalized.yaml；person2 的现行生成命令见 SOURCE_PROVENANCE.md 衍生物登记第 5 条。
+请勿再运行本脚本生成 person2.normalized.yaml；person2 的现行生成命令见 work/PROJECT_LEDGER.md §7（D1/D8）。
 
 person2 冻结 drawio 的机械归一化（mechanical normalize）。
 
@@ -12,7 +12,7 @@ person2 冻结 drawio 的机械归一化（mechanical normalize）。
     不人工裁决、不修改源；
   - 中文功能名与介质标签原样保留，仅作为字段携带（Stage-2 先验用），
     本脚本不据其改写任何拓扑。
-衍生物：work/derived/person2.normalized.yaml（处理方式登记见 SOURCE_PROVENANCE.md）。
+衍生物：work/derived/person2.normalized.yaml（处理方式登记见 work/PROJECT_LEDGER.md §7）。
 """
 from __future__ import annotations
 
