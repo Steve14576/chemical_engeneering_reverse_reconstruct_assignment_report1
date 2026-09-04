@@ -18,12 +18,16 @@ os.makedirs(FIG, exist_ok=True)
 HEAD = '<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}"><rect width="{w}" height="{h}" fill="white"/><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker><marker id="ard" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b00200"/></marker></defs>'
 
 
+def esc(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def box(x, y, w, h, label, fill="#fff", stroke="#111"):
     lines = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill}" stroke="{stroke}" stroke-width="1.6"/>']
     segs = label.split("\n")
     ty = y + h / 2 - 7 * (len(segs) - 1)
     for i, s in enumerate(segs):
-        lines.append(f'<text x="{x+w/2}" y="{ty+i*15}" font-size="13" text-anchor="middle" fill="#111">{s}</text>')
+        lines.append(f'<text x="{x+w/2}" y="{ty+i*15}" font-size="13" text-anchor="middle" fill="#111">{esc(s)}</text>')
     return "".join(lines)
 
 
@@ -33,7 +37,7 @@ def arr(x1, y1, x2, y2, dash=None, color="#111", marker="ar"):
 
 
 def txt(x, y, s, size=12, color="#111"):
-    return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}">{s}</text>'
+    return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}">{esc(s)}</text>'
 
 
 # ---------------- 框图 ----------------

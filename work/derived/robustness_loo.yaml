@@ -1,0 +1,229 @@
+meta:
+  level: W1/robustness
+  method: leave-one-out + 度数闭合 MILP（min Σ 候选）
+  script: work/derived/robustness_loo.py
+  baseline_min_closure: 0
+loo_prior:
+- edge:
+  - P-3511
+  - V-3506
+  min_size: 0
+  delta: 0
+- edge:
+  - P-3501
+  - V-3501
+  min_size: 1
+  delta: 1
+- edge:
+  - E-3505
+  - T-3512
+  min_size: 1
+  delta: 1
+- edge:
+  - E-3506
+  - T-3501B
+  min_size: 0
+  delta: 0
+- edge:
+  - E-3501
+  - P-3511
+  min_size: 0
+  delta: 0
+- edge:
+  - E-3501
+  - P-3501
+  min_size: 1
+  delta: 1
+- edge:
+  - E-3508
+  - T-3512
+  min_size: 1
+  delta: 1
+- edge:
+  - P-3502
+  - T-3501B
+  min_size: 1
+  delta: 1
+- edge:
+  - E-3506
+  - P-3502
+  min_size: 1
+  delta: 1
+- edge:
+  - P-3503
+  - T-3501B
+  min_size: 1
+  delta: 1
+- edge:
+  - E-3506
+  - P-3503
+  min_size: 1
+  delta: 1
+- edge:
+  - P-3511
+  - p2::5D5qHUWBTGfa0SRdJl68-5
+  min_size: 1
+  delta: 1
+- edge:
+  - V-3506
+  - p2::5D5qHUWBTGfa0SRdJl68-5
+  min_size: 1
+  delta: 1
+loo_obs_critical_count: 9
+loo_obs:
+- edge:
+  - T-301
+  - V-302
+  min_size: null
+- edge:
+  - E-301
+  - T-301
+  min_size: 0
+- edge:
+  - E-301
+  - V-301
+  min_size: null
+- edge:
+  - E-302
+  - T-302
+  min_size: null
+- edge:
+  - E-303
+  - T-302
+  min_size: null
+- edge:
+  - E-301
+  - T-302
+  min_size: 0
+- edge:
+  - p1r::kW8mp5fpktJNJ6bN1REy-14
+  - p1r::kW8mp5fpktJNJ6bN1REy-15
+  min_size: 0
+- edge:
+  - p1r::kW8mp5fpktJNJ6bN1REy-14
+  - p1r::kW8mp5fpktJNJ6bN1REy-22
+  min_size: 0
+- edge:
+  - p1r::kW8mp5fpktJNJ6bN1REy-15
+  - p1r::kW8mp5fpktJNJ6bN1REy-16
+  min_size: null
+- edge:
+  - p1r::kW8mp5fpktJNJ6bN1REy-22
+  - p1r::kW8mp5fpktJNJ6bN1REy-24
+  min_size: null
+- edge:
+  - E-3501
+  - R-3501A
+  min_size: 0
+- edge:
+  - R-3501A
+  - R-3501B
+  min_size: 0
+- edge:
+  - R-3501B
+  - p2::5D5qHUWBTGfa0SRdJl68-96
+  min_size: 0
+- edge:
+  - R-3501A
+  - p2::5D5qHUWBTGfa0SRdJl68-96
+  min_size: 0
+- edge:
+  - V-3502
+  - p2::5D5qHUWBTGfa0SRdJl68-28
+  min_size: 0
+- edge:
+  - T-3501B
+  - p2::5D5qHUWBTGfa0SRdJl68-28
+  min_size: 0
+- edge:
+  - p2::5D5qHUWBTGfa0SRdJl68-28
+  - p2::5D5qHUWBTGfa0SRdJl68-29
+  min_size: 0
+- edge:
+  - T-3501B
+  - p2::5D5qHUWBTGfa0SRdJl68-35
+  min_size: 0
+- edge:
+  - T-3512
+  - p2::5D5qHUWBTGfa0SRdJl68-35
+  min_size: 0
+- edge:
+  - E-3507
+  - p2::5D5qHUWBTGfa0SRdJl68-35
+  min_size: 0
+- edge:
+  - E-3509
+  - T-3502
+  min_size: 0
+- edge:
+  - T-3512
+  - p2::5D5qHUWBTGfa0SRdJl68-38
+  min_size: 0
+- edge:
+  - E-3509
+  - p2::5D5qHUWBTGfa0SRdJl68-39
+  min_size: null
+- edge:
+  - p2::5D5qHUWBTGfa0SRdJl68-35
+  - p2::5D5qHUWBTGfa0SRdJl68-39
+  min_size: null
+- edge:
+  - T-3502
+  - T-3509
+  min_size: 0
+- edge:
+  - T-3502
+  - V-3504
+  min_size: 0
+- edge:
+  - T-3509
+  - V-3503
+  min_size: 0
+- edge:
+  - E-3510
+  - V-3503
+  min_size: 0
+- edge:
+  - E-3507
+  - V-3503
+  min_size: 0
+- edge:
+  - T-3508
+  - V-3504
+  min_size: 0
+- edge:
+  - T-3508
+  - p2::5D5qHUWBTGfa0SRdJl68-85
+  min_size: 0
+- edge:
+  - E-3513
+  - p2::5D5qHUWBTGfa0SRdJl68-49
+  min_size: 0
+- edge:
+  - E-3512
+  - p2::5D5qHUWBTGfa0SRdJl68-49
+  min_size: 0
+- edge:
+  - T-3509
+  - p2::5D5qHUWBTGfa0SRdJl68-49
+  min_size: 0
+- edge:
+  - E-3513
+  - p2::5D5qHUWBTGfa0SRdJl68-51
+  min_size: 0
+- edge:
+  - E-3512
+  - p2::5D5qHUWBTGfa0SRdJl68-53
+  min_size: 0
+- edge:
+  - V-402
+  - p2::5D5qHUWBTGfa0SRdJl68-53
+  min_size: null
+- edge:
+  - E-3510
+  - T-3502
+  min_size: 0
+- edge:
+  - V-3502
+  - p2::5D5qHUWBTGfa0SRdJl68-96
+  min_size: 0
