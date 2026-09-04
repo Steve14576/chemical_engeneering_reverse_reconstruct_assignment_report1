@@ -95,3 +95,11 @@ user 报"ourwork 图渲染失败"。诊断：xml.etree 解析六张 SVG，仅 wo
 ### J22→J23 PNG 内联是个假问题：回退 SVG，PNG 降为附件备份
 user 要求"全导 PNG、内联换 PNG"。实施中连踩两坑：reportlab 5.x renderPM 需 rlPyCairo（补装 pycairo 后可用）；cairo 后端无中文字体→豆腐块→注入 font-family 后又触发逐文本字体扫描，单张小图 37s、全量分钟级。此时 user 点破关键事实：**md 编辑器渲染 SVG 时中文一直正常，坏的只有图6 的裸 &**。结论：字体问题只存在于 cairo/PNG 路径，SVG 路径无此问题 → PNG 内联是为不存在的问题开坑。回退：六张内联全部回 SVG；make_png_exports.py 保留为附件包/打印的可选工具（后台跑完的 PNG 作副产品），不进正文、不进关键路径。教训：先确认"谁在看、用什么渲染"，再选格式；别在渲染链上叠依赖。
 → 指向：D15、report.md 图1–6、make_png_exports.py。
+
+### J24 换 agent 把 flow_main 改成全框版 → 回档 fin1 恢复图标版；厘清"原图 vs 结果图"
+user 换了一个 agent，其 v2 把 flow_main.svg 改成全线框（无化工设备符号）。判断：错——图2 的职责是"带设备符号的规范工艺流程图"（②.2 要求），设备符号承载单元操作语义；全框拓扑是图1 flow_block 的职责，v2 等于把图2 做成第二张图1、信息更少。处置：git 回档到 fin1（HEAD 本即 fin1，仅清未提交残留；v2 脚本与备份 svg 移 personal/trash 保命）。同时厘清三层图定位：测绘原图=raw_material 冻结三件（不改一笔）；逆向结果图=flow_main.svg（线型标来源）；块级拓扑=flow_block.svg。并在 §0 加附图A（person1 现场照片原样嵌入）使"原图 vs 结果图"一眼可对照。
+→ 指向：D15、D16、report.md §0 附图A、personal/trash/make_flow_diagram_v2.py。
+
+### J25 图2 改 PNG 的根因 + 图7 说人话版
+根因确认：user 的 md 编辑器对 pyflowsheet 产出的 <path>/<circle> 设备符号渲染不良（显示成框框），而 PNG 光栅能正确显示图标 → 图2 内联改 PNG（user 手改，尊重），SVG 原件保留；纯 rect+text 的图（图1/图6/图7/struct×3）编辑器渲染正常，继续 SVG。新增图7 work_overview_plain.svg（make_work_overview_plain.py）：与图6 同结构（四泳道+三侧栏）但全日常说法（"每台设备必须有进有出"代替"度数闭合公理"、"承认有没画出来的线"代替"+漏画变量"、侧栏=补线/说话/查账三条规矩）；原版不删；手抄时图6/图7 二选一。PNG 全量重转（含图7）放后台跑（cairo 慢路，分钟级），仅作附件备份。
+→ 指向：D15、report.md 图2/图7、make_png_exports.py。

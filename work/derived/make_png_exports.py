@@ -29,6 +29,7 @@ NAMES = [
     "struct_catdist.svg",
     "struct_hx.svg",
     "work_overview.svg",
+    "work_overview_plain.svg",
 ]
 
 
