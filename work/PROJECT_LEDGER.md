@@ -117,6 +117,8 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 | D12 | work/derived/solver_result_P4.yaml + solve_closure_P4.py | L3/P4 | MILP 最小补集枚举（HiGHS） | 唯一最小补集 7 条：c1 E-3508—T-3512；c2/c3 P-3502—T-3501B/E-3506；c4/c5 P-3503—T-3501B/E-3506；c8 混合罐—P-3511；c9 V-3506—混合罐。不闭合白名单 E-3502/E-3503/FV301 声明为测绘缺陷 |
 | D13 | work/DEV_JOURNAL.md | 流水 | 研发流水（J1–J14） | 过程与改主意叙事；指回本文件与 yaml，不复制内容 |
 | D14 | work/derived/balance_T0.yaml + balance_T0.py | W2/Tier0 | 手写稳态组分衡算 | 闭合 err=0；MTBE 2093.6 kg/h @X0.95（纯度 99.93 wt% 计算值）；醚后C4 MeOH 485 ppm(mol)；新鲜甲醇 23.835 / 循环 3.665 kmol/h；吨耗理论 0.3635 t/t；敏感性 X0.90→1983.4 kg/h。假设逐条标 literature摘要级/assumed |
+| D15 | work/derived/figures/flow_main.svg + flow_main.mermaid.md + flow_handcopy.md + make_flow_diagram.py | W4 | pyflowsheet 0.2.2（pathfinding 钉 1.0.1） | 36 单元/31 流；线型：实=观测、虚=prior、点划=公用、✕=缺陷、?=未知悬空；箭头仅排版非方向主张。手抄规格分 4 区 |
+| D16 | work/paper_md/report.md | W3/L4 | 报告 md 底稿（agent 起草） | 四节+方法附录；CJK 5214 字（≥5000 过线）；数字引 D14、背书引 D11、方法引 D5–D12、局限六条；班级/姓名/院系留空待 user 填 |
 
 ## §8 报告取材映射
 

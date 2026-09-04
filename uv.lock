@@ -577,7 +577,7 @@ requires-dist = [
     { name = "networkx", specifier = ">=3.6.1" },
     { name = "numpy", specifier = ">=2.5.2" },
     { name = "pathfinding", specifier = "==1.0.1" },
-    { name = "pyflowsheet", specifier = ">=0.2.2" },
+    { name = "pyflowsheet", specifier = "==0.2.2" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "scipy", specifier = ">=1.18.1" },
 ]

@@ -9,7 +9,7 @@ dependencies = [
     "networkx>=3.6.1",
     "numpy>=2.5.2",
     "pathfinding==1.0.1",
-    "pyflowsheet>=0.2.2",
+    "pyflowsheet==0.2.2",
     "pyyaml>=6.0.3",
     "scipy>=1.18.1",
 ]
