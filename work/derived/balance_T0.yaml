@@ -1,0 +1,111 @@
+meta:
+  level: W2/Tier0
+  method: 手写稳态组分衡算（非模拟器）
+  script: work/derived/balance_T0.py
+  stoichiometry: iC4= + MeOH -> MTBE (1:1:1)
+  closure: 总进质量=总出质量（水回路闭合、无损失）；assert 1e-6 通过
+assumptions:
+- name: basis
+  value: 100 kmol/h 混合C4
+  kind: convention
+- name: y_iC4
+  value: 0.25
+  kind: assumed
+  note: FCC混合C4异丁烯典型0.2–0.35中值；无该厂实测
+- name: R_M 醇烯比
+  value: 1.1
+  kind: assumed
+  note: 文献常见1.0–1.2；D11摘要提到控醇烯比但无数字
+- name: X 转化率
+  value: 0.95
+  kind: literature摘要级
+  note: D11 知乎专栏 90–95%；敏感性0.90
+- name: eta_EX 萃取脱除率
+  value: 0.99
+  kind: assumed
+- name: x_MeOH_bottom
+  value: 0.002
+  kind: assumed
+  note: 产品杂质水平
+- name: W 萃取水
+  value: 80.0
+  kind: assumed
+  note: 水/C4 mol比约0.8
+- name: MW 其余C4
+  value: 57.12
+  kind: assumed
+  note: 烷/烯混均值
+base_X0.95:
+  X: 0.95
+  streams_kmol_h:
+    S1_C4feed:
+      iC4=: 25.0
+      C4other: 75.0
+    S2_MeOH_fresh:
+      MeOH: 23.834619238476954
+    S3_reactor_out:
+      MTBE: 23.75
+      iC4=: 1.25
+      C4other: 75.0
+      MeOH: 3.7500000000000036
+    S4_CD_bottom_MTBE:
+      MTBE: 23.75
+      MeOH: 0.04759519038076152
+    S5_CD_top:
+      iC4=: 1.25
+      C4other: 75.0
+      MeOH: 3.702404809619242
+    S6_EX_raffinate:
+      iC4=: 1.25
+      C4other: 75.0
+      MeOH: 0.037024048096192454
+    S7_EX_extract:
+      MeOH: 3.6653807615230494
+      H2O: 80.0
+    S8_MR_top_recycle:
+      MeOH: 3.6653807615230494
+    S9_MR_bottom_water:
+      H2O: 80.0
+  streams_kg_h:
+    S1_C4feed:
+      iC4=: 1402.75
+      C4other: 4284.0
+    S2_MeOH_fresh:
+      MeOH: 763.66
+    S3_reactor_out:
+      MTBE: 2093.56
+      iC4=: 70.14
+      C4other: 4284.0
+      MeOH: 120.15
+    S4_CD_bottom_MTBE:
+      MTBE: 2093.56
+      MeOH: 1.52
+    S5_CD_top:
+      iC4=: 70.14
+      C4other: 4284.0
+      MeOH: 118.63
+    S6_EX_raffinate:
+      iC4=: 70.14
+      C4other: 4284.0
+      MeOH: 1.19
+    S7_EX_extract:
+      MeOH: 117.44
+      H2O: 1441.6
+    S8_MR_top_recycle:
+      MeOH: 117.44
+    S9_MR_bottom_water:
+      H2O: 1441.6
+  mass_in_kg_h: 6450.41
+  mass_out_kg_h: 6450.41
+  closure_err_kg_h: 0.0
+  MTBE_kg_h: 2093.6
+  MTBE_purity_wt: 0.99927
+  raffinate_MeOH_ppm_mol: 485.3
+  MeOH_theoretical_t_per_t_MTBE: 0.3635
+  fresh_MeOH_kmol_h: 23.835
+  recycle_MeOH_kmol_h: 3.665
+sensitivity_X0.90:
+  MTBE_kg_h: 1983.4
+  MTBE_purity_wt: 0.99927
+  fresh_MeOH_kmol_h: 22.595
+  closure_err_kg_h: -0.0

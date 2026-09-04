@@ -101,6 +101,12 @@ def main() -> int:
             "fixed_edges": {"observed": len(obs), "p2_grammar_stable": P2_STABLE, "A1_A3": A_EDGES},
             "deficient_allowed_no_closure": DEFICIENT_ALLOWED,
             "backing": "work/derived/prior_backing.yaml (D11)",
+            "derivation": [
+                "v1 infeasible：加缺口诊断打印，定位 p2::-5(C4原料混合罐) 度数缺口且无候选可达 → 补候选 c8/c9",
+                "v2 得 8 个枚举解：真最小 6 条 ×2（c8 xor c9 分歧）+ 若干更大超集（整数割后的次优，非最小）；分歧源 = feed drum 度数要求取 1",
+                "v3 按档1 惯例 feed drum 有进有出 → SPECIAL_REQ 度数=2 → 唯一最小 7 条；该特例是惯例不是乐观补全",
+                "stable = 所有枚举解共有 = c1,c2,c3,c4,c5,c8,c9",
+            ],
         },
         "candidates": [{"id": i, "edge": [a, b], "note": note} for (i, a, b, note) in CANDIDATES],
         "minimal_sets": res_sets,

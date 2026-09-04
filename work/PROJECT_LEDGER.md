@@ -67,6 +67,7 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 - **P4 拍板（user）**：A1–A3 行；A4/A6 按 agent 理解；A5 = 最小必需补集且"补也试出来"（枚举最小补集 + W2 衡算检验，禁止最乐观补全）；白名单未补充（维持 6 处错别字）；stray 重复文件移 trash。裁决数据落 D10。
 - **先验背书检索（2026-09-04，WebSearch 两轮）**：档2 前半（醚化+催化蒸馏）与档3 催化蒸馏内件命中（摘要级 URL 见 D11）；**档2 后半（甲醇萃取+甲醇回收序列）未直接命中 → 降级"档2-弱·行业通用配置·推断"，已告知 user**；档3 其余内件待收（速通手册优先）。
 - **P4 最小补集枚举完成（D12）**：唯一最小补集 7 条；feed drum（C4 原料混合罐）按档1 惯例度数=2 消除 c8/c9 二选一分歧（非乐观补全）。
+- **W2 Tier 0 衡算完成（D14）**：闭合 err=0，A5 检验环通过（流程每条流都有去处、质量闭合；只证自洽+量级合理，不证"真"）。转化率取文献摘要级 90–95%，其余假设标 assumed。
 
 ## §5 求解梯与结果解读
 
@@ -114,6 +115,8 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 | D10 | work/derived/prior_decisions_P4.yaml | P4 输入 | user 拍板转录（agent 记录，2026-09-04） | A1–A6 裁决数据 + 白名单（已关闭）+ stray 处置；全条目 prior-driven 声明与局限 |
 | D11 | work/derived/prior_backing.yaml | P4 背书 | WebSearch 两轮（2026-09-04） | 档2 前半命中 4 URL（摘要级）；档2 后半未直接命中→降级推断；档3 催化蒸馏内件命中 4 URL；档3 其余待收；档1 不需外部背书 |
 | D12 | work/derived/solver_result_P4.yaml + solve_closure_P4.py | L3/P4 | MILP 最小补集枚举（HiGHS） | 唯一最小补集 7 条：c1 E-3508—T-3512；c2/c3 P-3502—T-3501B/E-3506；c4/c5 P-3503—T-3501B/E-3506；c8 混合罐—P-3511；c9 V-3506—混合罐。不闭合白名单 E-3502/E-3503/FV301 声明为测绘缺陷 |
+| D13 | work/DEV_JOURNAL.md | 流水 | 研发流水（J1–J14） | 过程与改主意叙事；指回本文件与 yaml，不复制内容 |
+| D14 | work/derived/balance_T0.yaml + balance_T0.py | W2/Tier0 | 手写稳态组分衡算 | 闭合 err=0；MTBE 2093.6 kg/h @X0.95（纯度 99.93 wt% 计算值）；醚后C4 MeOH 485 ppm(mol)；新鲜甲醇 23.835 / 循环 3.665 kmol/h；吨耗理论 0.3635 t/t；敏感性 X0.90→1983.4 kg/h。假设逐条标 literature摘要级/assumed |
 
 ## §8 报告取材映射
 
@@ -130,3 +133,4 @@ L0 raw 冻结源 → L1 数字化/转录（normalized yaml）→ L2 跨源对账
 - 旧 ledger §0–§7 → 本文件 §1–§8。
 - 知识卡片 `personal/QnAnExperience.md` Q2 的出处已改指本文件章节；Q2 不承担项目台账职能。
 - **废弃产物警示**：`personal/trash/dc/report.md` 与 `field_reconciliation.md` 为早期废弃草稿，其中的标签合并结论（如"T-302 与 T-3501A 同塔""E-3509 与 E-350S 同冷却器"）**已废弃、不作数**，不得回流进本报告；当前口径以 §5/§6/D10 为准。
+- **三层分离（2026-09-04，D13）**：事实链 = `work/derived/*.yaml`（数字 SSOT，推导进各自 `meta.derivation`）；登记册 = 本文件（决策 SSOT，保持薄）；研发流水 = `work/DEV_JOURNAL.md`（J1–Jn，过程与改主意）。查数字→yaml；查决策→本文件；查"当时怎么想的"→journal。
