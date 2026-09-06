@@ -144,6 +144,7 @@ PRIOR = [
     ("P09", "E3505", "TOut", "T3512", "In"),
     ("P10", "T3512", "Out", "E3508", "TIn"),
     ("P11", "SFEC4", "Out", "T3502", "Feed"),
+    ("P12", "REFLUX", "Out", "MEH", "VIn"),
 ]
 UTIL = [("U01", "STEAM", "Out", "E3513", "SIn")]
 
@@ -172,6 +173,7 @@ pfd.callout("self-loop not drawn: TMP-MEOHCOL extraction-water recycle (declared
 pfd.callout("person1 four unlabeled boxes kept as candidates, not nodes (declared)", (40, 740))
 pfd.callout("P-3502/P-3503 bottom-circulation pumps: prior edges not drawn (clutter), see handcopy", (820, 740))
 pfd.callout("R-3501A outlet: series-to-B vs parallel-to-junction = union of two surveys, unresolved (4th ambiguity)", (40, 800))
+pfd.callout("utility lines (CW in/out, condensate return, vents) omitted per basic-PFD convention; see report appendix table", (40, 816))
 
 out = os.path.join(FIG, "flow_main_full.svg")
 ctx = SvgContext(out)

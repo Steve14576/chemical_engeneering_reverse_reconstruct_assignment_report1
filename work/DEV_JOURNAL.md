@@ -119,3 +119,11 @@ user 指认旧 flow_main 有三类问题并要求"画全、不覆盖旧的、尽
 user 要求"再出一个没有渲染歧义的线框图，平行于图2 对照看"。做法：make_flow_diagram_wire.py **import make_flow_diagram_full 复用 U/OBS/PRIOR/UTIL**（同源保证两图拓扑不漂移；import 顺带幂等重生成 full svg），画矩形框（id+中文名在框内）+ 框边中点直线，线型语义同图2，不画 stream 编号，callout 声明同图2（含第 4 处歧义）。46 框/43 边与图2 一致。
 取舍：wire 只出 SVG 不进 PNG 名单——纯 rect+text 的 SVG 编辑器/浏览器可直接渲染；cairo 中文慢路为 46 个中文框标签跑分钟级（240s 超时实测），不为它等。PNG 只为 pyflowsheet 图标图（flow_main_full）存在。
 → 指向：D15、figures/flow_main_wire.svg、make_flow_diagram_wire.py。
+
+### J29 user 质疑"冗余"措辞与"停在拓扑自洽"→ 两处认改
+user 指认：① report2 把 3 条 prior 边称"冗余"是误导——它们在工艺上有明确意义（泵吸入线/再沸器回路/泵出口线），"冗余"只指度数闭合判据层面池内可替代；② 我们停在拓扑自洽，工艺层的公用工程与返回线（冷却水进回、冷凝水回、放空、回流返回）没补全。认改：
+- report2 鲁棒性段措辞改为"非唯一必需（池内可替代）≠ 工艺上可省"。
+- 新增附录段"公用工程与返回线（工艺层补全，声明省略画法）"：冷却水进/回 7 台、蒸汽进+冷凝水回 2 台、放空/安全阀 3 处、回流返回 REFLUX→MEH；手抄不画公用工程线、抄表。
+- 图补 P12（REFLUX→MEH 回流返回，prior 虚线）+ callout 声明公用工程线按基本 PFD 惯例省略；streams 43→44，wire 同步（import 同源）。
+教训：闭合判据（拓扑层）与工艺完整性（工艺层）是两件事，报告里必须分开写，不能拿拓扑自洽冒充工艺完整。
+→ 指向：D16、D17、report2 附录、figures/flow_main_full|wire。
