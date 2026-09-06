@@ -107,3 +107,15 @@ user 换了一个 agent，其 v2 把 flow_main.svg 改成全线框（无化工�
 ### J26 report2 修缮终稿：引用重排/注释统一/删冗图/去 AI 腔/§0 收口语
 user 五点要求逐条落实于 report2.md：① 引用按首次出现顺序重排（映射 11→1,1→2,7→3,4-6 不变,9→7,2→8,3→9,8→10,10→11；逗号列表 [1,3]/[1,8] 正则漏配需手动补 [2,9]/[2,10]；参考文献列表二次按新号排序——第一次按旧键排错，已修）；② 注释统一 blockquote（§0 归属说明、图件与手抄指引）；③ 删不用图：术语版总览 work_overview.svg/png 删除，report2 图6 换说人话版 plain.svg；report.md 标 superseded 保留作历史底稿；struct_*.png 与 flow_main.png 保留作附件/打印备份（report2 不嵌）；④ 去"不是…而是…"句式六处；⑤ §0 由口语改书面（"拼不出一个说得通的流程"→"无法闭合成自洽流程"等）。校验：CJK 6821、嵌入 6 张、正文引注 1,2,3,4-6,7,8… 与列表 1–11 顺序一致。
 → 指向：D16、report2.md、personal/trash 无新增（删除件为 figures/work_overview.svg|png）。
+
+### J27 流程图全量版 flow_main_full（独立新脚本，旧版不动）
+user 指认旧 flow_main 有三类问题并要求"画全、不覆盖旧的、尽可能用库"。分析结论（先分析后动手）：拓扑无线画反、线型与数据一致；真问题= A 遗漏 13 条观测边+8 个单元未入图、B 孤岛（P-3502/P-3503 已声明、P-3505A 未声明）、C 渲染糊（stream 编号标签叠字）。处置：新脚本 make_flow_diagram_full.py（复制扩展旧脚本）→ flow_main_full.svg/png：补 8 单元（某管道汇合/某黑盒/E-3509/E-3510/T-3509/T-3508/V-3504 + ✕三台符号化）、补 13 条观测实线（S20–S32）、P-3505A 不再孤立、stream 标签隐藏。
+踩坑两连：① showTitle=False 在 0.2.2 无效 → 改 textColor 隐藏；② textColor 传字符串被 svgwrite 拒（'rgbrgb'/'rgb#ff'），读源码发现 svgcontext 把 color 拼进 `rgb{...}`，须传三元组 (255,255,255)。callout 中文在 cairo 下豆腐 → callout 改纯英文。callout 位置两次调整避开设备。
+残留（接受并声明）：密集区单元 id 标签彼此靠近（自动布局所致，放大可读）；pyflowsheet 的 SVG 不渲染单元中文名（只画 id），中文名以 flow_handcopy.md 与 mermaid 为准。旧 make_flow_diagram.py / flow_main.svg / flow_main.png 全部保留未动。
+复核审计（user 追问"还有漏的吗"）：逐条对账 merged 39 条非自环观测边 → 漏画 0；**多画 1 条 S09（R-3501B→V-3502）**——旧版把"某管道汇合"当透明直连，全量版补 S21+S22 后该线无据，已删（streams 44→43）。未画 8 条全为声明项：P-3505B 入口断口、T-3508 出口断口、MEH 萃取水自环、E-302 未知端、person1 四个未标注框间 4 边。单元口径：merged 52 实体 vs 图 46 = 7 个声明不立节点（断了?×2、放空?、person1 未标注×4）+ 混合罐双实体（p1r C4 与 p2 混合罐，candidate_align）画一个。prior 11 条全画；可选 prior 2 条与 P-3502/3 prior 声明不画。
+→ 指向：D15、figures/flow_main_full.svg|png、make_flow_diagram_full.py。
+
+### J28 线框对照图 flow_main_wire（平行于图2，消渲染歧义）
+user 要求"再出一个没有渲染歧义的线框图，平行于图2 对照看"。做法：make_flow_diagram_wire.py **import make_flow_diagram_full 复用 U/OBS/PRIOR/UTIL**（同源保证两图拓扑不漂移；import 顺带幂等重生成 full svg），画矩形框（id+中文名在框内）+ 框边中点直线，线型语义同图2，不画 stream 编号，callout 声明同图2（含第 4 处歧义）。46 框/43 边与图2 一致。
+取舍：wire 只出 SVG 不进 PNG 名单——纯 rect+text 的 SVG 编辑器/浏览器可直接渲染；cairo 中文慢路为 46 个中文框标签跑分钟级（240s 超时实测），不为它等。PNG 只为 pyflowsheet 图标图（flow_main_full）存在。
+→ 指向：D15、figures/flow_main_wire.svg、make_flow_diagram_wire.py。

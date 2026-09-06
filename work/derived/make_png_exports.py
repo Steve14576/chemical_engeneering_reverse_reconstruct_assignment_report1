@@ -28,9 +28,11 @@ NAMES = [
     "struct_reactor.svg",
     "struct_catdist.svg",
     "struct_hx.svg",
-    "work_overview.svg",
     "work_overview_plain.svg",
+    "flow_main_full.svg",
 ]
+# 注：flow_main_wire.svg 不进 PNG 名单——纯 rect+text 的 SVG 编辑器/浏览器可直接渲染；
+# cairo 中文慢路为 46 个中文框标签要跑分钟级，不为它等（J28）。
 
 
 def inject_font(svg_text: str) -> str:
